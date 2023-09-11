@@ -248,6 +248,7 @@ namespace ht_698._45.UI
         {
             try
             {
+                string b= "1";
                 if (!PublicVariable.IsReading)
                 {
                     this.bIsStop = false;
