@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA739061-F445-47A6-83B3-624A6AB4662B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ht_698._45</RootNamespace>
+    <AssemblyName>ht_698.45</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>electric-meter_7286822.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EncryptServerConnect">
+      <HintPath>..\..\..\..\Release\EncryptServerConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin4">
+      <HintPath>..\..\..\..\Release\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\add_Type.cs" />
+    <Compile Include="Base\Client_APDU.cs" />
+    <Compile Include="Base\ConnectResult.cs" />
+    <Compile Include="Base\DAR.cs" />
+    <Compile Include="Base\DataRecDelayTime.cs" />
+    <Compile Include="Base\DataReceivedEventArgs.cs" />
+    <Compile Include="Base\DataReceivedEventHandler.cs" />
+    <Compile Include="Base\DataType.cs" />
+    <Compile Include="Base\DataTypeLen.cs" />
+    <Compile Include="Base\DBConnect.cs" />
+    <Compile Include="Base\EncryptServerConnect.cs" />
+    <Compile Include="Base\IniFile.cs" />
+    <Compile Include="Base\Link_Math.cs" />
+    <Compile Include="Base\Protocol.cs" />
+    <Compile Include="Base\Protocol_2.cs" />
+    <Compile Include="Base\PublicVariable.cs" />
+    <Compile Include="Base\SECURITY_APDU.cs" />
+    <Compile Include="Base\SerialPortBaudRates.cs" />
+    <Compile Include="Base\SerialPortDatabits.cs" />
+    <Compile Include="Base\SerialPortUtil.cs" />
+    <Compile Include="Base\Server_APDU.cs" />
+    <Compile Include="Base\SkinType.cs" />
+    <Compile Include="Base\SocketApi.cs" />
+    <Compile Include="Base\SocketApi2.cs" />
+    <Compile Include="Base\UnitsEnum.cs" />
+    <Compile Include="Common\ComputerInfo.cs" />
+    <Compile Include="Common\EncryptionHelper.cs" />
+    <Compile Include="Common\EncryptionKeyEnum.cs" />
+    <Compile Include="Common\RegistFileHelper.cs" />
+    <Compile Include="Entity\AddressDao.cs" />
+    <Compile Include="Entity\ErrMeterDataDao.cs" />
+    <Compile Include="Entity\ItemDao.cs" />
+    <Compile Include="Entity\LeanMeterDataDao.cs" />
+    <Compile Include="Entity\MeterDataDao.cs" />
+    <Compile Include="Entity\METER_JUDGE_DAO.cs" />
+    <Compile Include="Entity\Program_Dao.cs" />
+    <Compile Include="Entity\Test2ErrDao.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\AccessHelper.cs" />
+    <Compile Include="Transport\Base\IMethod.cs" />
+    <Compile Include="Transport\comdata.cs" />
+    <Compile Include="Transport\CRC16Util.cs" />
+    <Compile Include="Transport\CS.cs" />
+    <Compile Include="Transport\Data.cs" />
+    <Compile Include="Transport\DbConnectClass.cs" />
+    <Compile Include="Transport\INIClass.cs" />
+    <Compile Include="Transport\OperationClass.cs" />
+    <Compile Include="Transport\PortClass.cs" />
+    <Compile Include="Transport\PublicClass.cs" />
+    <Compile Include="Transport\SocketApiClass.cs" />
+    <Compile Include="Transport\SQLConnectClass.cs" />
+    <Compile Include="Transport\_Convert.cs" />
+    <Compile Include="Model\APDU\Action_APDU.cs" />
+    <Compile Include="Model\APDU\Action_Cipher_APDU.cs" />
+    <Compile Include="Model\APDU\Read_APDU.cs" />
+    <Compile Include="Model\APDU\RSD_APDU.cs" />
+    <Compile Include="Model\APDU\Write_APDU.cs" />
+    <Compile Include="Model\APDU\Write_Cipher_APDU.cs" />
+    <Compile Include="Model\Base\AddressInfo.cs" />
+    <Compile Include="Model\Base\ElectricQuantity.cs" />
+    <Compile Include="Model\Base\IniFile.cs" />
+    <Compile Include="Model\Base\Item.cs" />
+    <Compile Include="Model\Base\MAC.cs" />
+    <Compile Include="Model\Base\MeterData.cs" />
+    <Compile Include="Model\Base\METER_JUDGE.cs" />
+    <Compile Include="Model\Base\OAD.cs" />
+    <Compile Include="Model\Base\PortInfo.cs" />
+    <Compile Include="Model\Base\RSD.cs" />
+    <Compile Include="Model\Base\SECURITY.cs" />
+    <Compile Include="Model\Base\SID.cs" />
+    <Compile Include="Model\Base\SID_MAC.cs" />
+    <Compile Include="Model\Base\Test2Err.cs" />
+    <Compile Include="Model\Base\Threshold.cs" />
+    <Compile Include="Model\Base\_TimeInterval.cs" />
+    <Compile Include="Model\Base\_TimeZone.cs" />
+    <Compile Include="Model\Frame\Frame_Action.cs" />
+    <Compile Include="Model\Frame\Frame_Action_Cipher.cs" />
+    <Compile Include="Model\Frame\Frame_Read.cs" />
+    <Compile Include="Model\Frame\Frame_RSD.cs" />
+    <Compile Include="Model\Frame\Frame_Write.cs" />
+    <Compile Include="Model\Frame\Frame_Write_Cipher.cs" />
+    <Compile Include="Model\Options\ErrThreshold.cs" />
+    <Compile Include="Model\Options\LeadAddress.cs" />
+    <Compile Include="Model\Options\LeadThreshold.cs" />
+    <Compile Include="Model\Options\PortOptions.cs" />
+    <Compile Include="Model\Options\TestThreshold.cs" />
+    <Compile Include="UI\Aboat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Aboat.Designer.cs">
+      <DependentUpon>Aboat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Advanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Advanced.Designer.cs">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AutoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AutoReport.Designer.cs">
+      <DependentUpon>AutoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AutoReportCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AutoReportCom.Designer.cs">
+      <DependentUpon>AutoReportCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BatchOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BatchOperation.Designer.cs">
+      <DependentUpon>BatchOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CommParam.Designer.cs">
+      <DependentUpon>CommParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\dataBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\dataBack.Designer.cs">
+      <DependentUpon>dataBack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\demand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\demand.Designer.cs">
+      <DependentUpon>demand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\display.Designer.cs">
+      <DependentUpon>display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayItem.Designer.cs">
+      <DependentUpon>DisplayItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Energy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Energy.Designer.cs">
+      <DependentUpon>Energy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\feesCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\feesCharge.Designer.cs">
+      <DependentUpon>feesCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FollowRepoartAndTimeTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FollowRepoartAndTimeTag.Designer.cs">
+      <DependentUpon>FollowRepoartAndTimeTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Follow_Collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Follow_Collection.Designer.cs">
+      <DependentUpon>Follow_Collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form_Main.Designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\form_安全模式参数.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\form_安全模式参数.Designer.cs">
+      <DependentUpon>form_安全模式参数.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Freeze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Freeze.Designer.cs">
+      <DependentUpon>Freeze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InnerCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InnerCommand.Designer.cs">
+      <DependentUpon>InnerCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LadderAndPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LadderAndPrice.Designer.cs">
+      <DependentUpon>LadderAndPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Link_Parsing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Link_Parsing.Designer.cs">
+      <DependentUpon>Link_Parsing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\meterInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\meterInfo.Designer.cs">
+      <DependentUpon>meterInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ModeKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ModeKeys.Designer.cs">
+      <DependentUpon>ModeKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewBatch.Designer.cs">
+      <DependentUpon>NewBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Parameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Parameter.Designer.cs">
+      <DependentUpon>Parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Rates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rates.Designer.cs">
+      <DependentUpon>Rates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\regist.Designer.cs">
+      <DependentUpon>regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\selfReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\selfReport.Designer.cs">
+      <DependentUpon>selfReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\selfWrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\selfWrop.Designer.cs">
+      <DependentUpon>selfWrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SetIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetIP.Designer.cs">
+      <DependentUpon>SetIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StateMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StateMeter.Designer.cs">
+      <DependentUpon>StateMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Sysconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Sysconfig.Designer.cs">
+      <DependentUpon>Sysconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Variable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Variable.Designer.cs">
+      <DependentUpon>Variable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Weekset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Weekset.Designer.cs">
+      <DependentUpon>Weekset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Wg_ModeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Wg_ModeForm.Designer.cs">
+      <DependentUpon>Wg_ModeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\载波成功率.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\载波成功率.Designer.cs">
+      <DependentUpon>载波成功率.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\Aboat.resx">
+      <DependentUpon>Aboat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Advanced.resx">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AutoReport.resx">
+      <DependentUpon>AutoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AutoReportCom.resx">
+      <DependentUpon>AutoReportCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BatchOperation.resx">
+      <DependentUpon>BatchOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CommParam.resx">
+      <DependentUpon>CommParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\dataBack.resx">
+      <DependentUpon>dataBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\demand.resx">
+      <DependentUpon>demand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\display.resx">
+      <DependentUpon>display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayItem.resx">
+      <DependentUpon>DisplayItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Energy.resx">
+      <DependentUpon>Energy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\feesCharge.resx">
+      <DependentUpon>feesCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FollowRepoartAndTimeTag.resx">
+      <DependentUpon>FollowRepoartAndTimeTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Follow_Collection.resx">
+      <DependentUpon>Follow_Collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\form_安全模式参数.resx">
+      <DependentUpon>form_安全模式参数.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Freeze.resx">
+      <DependentUpon>Freeze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InnerCommand.resx">
+      <DependentUpon>InnerCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LadderAndPrice.resx">
+      <DependentUpon>LadderAndPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Link_Parsing.resx">
+      <DependentUpon>Link_Parsing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\meterInfo.resx">
+      <DependentUpon>meterInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ModeKeys.resx">
+      <DependentUpon>ModeKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewBatch.resx">
+      <DependentUpon>NewBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Parameter.resx">
+      <DependentUpon>Parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rates.resx">
+      <DependentUpon>Rates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\regist.resx">
+      <DependentUpon>regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\selfReport.resx">
+      <DependentUpon>selfReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\selfWrop.resx">
+      <DependentUpon>selfWrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SetIP.resx">
+      <DependentUpon>SetIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StateMeter.resx">
+      <DependentUpon>StateMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Sysconfig.resx">
+      <DependentUpon>Sysconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Variable.resx">
+      <DependentUpon>Variable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Weekset.resx">
+      <DependentUpon>Weekset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Wg_ModeForm.resx">
+      <DependentUpon>Wg_ModeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\载波成功率.resx">
+      <DependentUpon>载波成功率.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="skin\DiamondBlue.ssk" />
+    <EmbeddedResource Include="skin\DiamondGreen.ssk" />
+    <EmbeddedResource Include="skin\MSN.ssk" />
+    <EmbeddedResource Include="skin\RealOne.ssk" />
+    <EmbeddedResource Include="skin\Warm.ssk" />
+    <EmbeddedResource Include="skin\XPBlue.ssk" />
+    <EmbeddedResource Include="skin\XPGreen.ssk" />
+    <EmbeddedResource Include="skin\XPOrange.ssk" />
+    <EmbeddedResource Include="skin\XPSilver.ssk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="electric-meter_7286822.ico" />
+    <Content Include="Resources\electric-meter_7286822.ico" />
+    <Content Include="Resources\excel.png" />
+    <Content Include="Resources\login.ico" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\pictureBox1.Image.png" />
+    <Content Include="Resources\pictureBox1.png" />
+    <Content Include="Resources\set.png" />
+    <Content Include="Resources\test1.ico" />
+    <Content Include="Resources\test1.png" />
+    <Content Include="Resources\time.png" />
+    <None Include="Resources\主界面背景.jpg" />
+    <Content Include="Resources\主界面背景.png" />
+    <Content Include="Resources\保存 %281%29.png" />
+    <Content Include="Resources\单属性设置.png" />
+    <None Include="Resources\单属性设置1.png" />
+    <None Include="Resources\单属性设置11.png" />
+    <Content Include="Resources\多属性设置.png" />
+    <None Include="Resources\多属性设置1.png" />
+    <Content Include="Resources\多项抄读.png" />
+    <None Include="Resources\多项抄读1.png" />
+    <Content Include="Resources\密码锁.png" />
+    <Content Include="Resources\导出到Excel.png" />
+    <Content Include="Resources\方法操作.png" />
+    <Content Include="Resources\暂停.png" />
+    <Content Include="Resources\清空显示.png" />
+    <Content Include="Resources\红外.png" />
+    <Content Include="Resources\节点.png" />
+    <Content Include="Resources\设置后读取.png" />
+    <None Include="Resources\设置后读取1.png" />
+    <Content Include="Resources\读取.png" />
+    <Content Include="Resources\连接.png" />
+    <None Include="Resources\退出.png" />
+    <None Include="Resources\关于.png" />
+    <Content Include="Resources\保存.png" />
+    <Content Include="Resources\关于.ico" />
+    <Content Include="Resources\关闭.png" />
+    <Content Include="Resources\刷新.png" />
+    <Content Include="Resources\协商失效.png" />
+    <Content Include="Resources\密码 %281%29 %281%29.png" />
+    <Content Include="Resources\密码 %281%29.png" />
+    <Content Include="Resources\导出.png" />
+    <Content Include="Resources\工具.png" />
+    <Content Include="Resources\应用连接.png" />
+    <Content Include="Resources\打印.png" />
+    <Content Include="Resources\批操作.png" />
+    <Content Include="Resources\断开.png" />
+    <Content Include="Resources\时钟.png" />
+    <Content Include="Resources\智能.jpg" />
+    <Content Include="Resources\服务器.png" />
+    <Content Include="Resources\测试工具.png" />
+    <Content Include="Resources\添加.png" />
+    <Content Include="Resources\移除.png" />
+    <Content Include="Resources\系统管理.png" />
+    <Content Include="Resources\系统管理1.png" />
+    <Content Include="Resources\系统管理2.png" />
+    <Content Include="Resources\蓝色背景.jpeg" />
+    <Content Include="Resources\规约.ico" />
+    <Content Include="Resources\规约.png" />
+    <None Include="Resources\解析.png" />
+    <Content Include="Resources\设置.png" />
+    <Content Include="Resources\进厂命令.ico" />
+    <Content Include="Resources\进厂命令.png" />
+    <Content Include="Resources\远程控制.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
