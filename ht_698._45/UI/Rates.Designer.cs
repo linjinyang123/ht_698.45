@@ -65,6 +65,8 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tbn_单项抄读 = new System.Windows.Forms.ToolStripButton();
+            this.tbn_单属性设置 = new System.Windows.Forms.ToolStripButton();
             this.rad_Sd2 = new System.Windows.Forms.RadioButton();
             this.rad_Sd1 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -115,8 +117,10 @@
             this.lsb_Ggjr = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.chk_All = new System.Windows.Forms.CheckBox();
-            this.tbn_单项抄读 = new System.Windows.Forms.ToolStripButton();
-            this.tbn_单属性设置 = new System.Windows.Forms.ToolStripButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.groupBox7.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -172,7 +176,7 @@
             // 
             // msT_Sqbqh
             // 
-            this.msT_Sqbqh.Location = new System.Drawing.Point(560, 69);
+            this.msT_Sqbqh.Location = new System.Drawing.Point(539, 69);
             this.msT_Sqbqh.Mask = "0000年90月90日90时90分";
             this.msT_Sqbqh.Name = "msT_Sqbqh";
             this.msT_Sqbqh.Size = new System.Drawing.Size(147, 21);
@@ -190,7 +194,7 @@
             // 
             // txt_ZxSd
             // 
-            this.txt_ZxSd.Location = new System.Drawing.Point(560, 98);
+            this.txt_ZxSd.Location = new System.Drawing.Point(539, 98);
             this.txt_ZxSd.Name = "txt_ZxSd";
             this.txt_ZxSd.Size = new System.Drawing.Size(147, 21);
             this.txt_ZxSd.TabIndex = 66;
@@ -216,7 +220,7 @@
             // 
             // btn_WeekSet
             // 
-            this.btn_WeekSet.Location = new System.Drawing.Point(621, 128);
+            this.btn_WeekSet.Location = new System.Drawing.Point(600, 128);
             this.btn_WeekSet.Name = "btn_WeekSet";
             this.btn_WeekSet.Size = new System.Drawing.Size(29, 21);
             this.btn_WeekSet.TabIndex = 64;
@@ -226,7 +230,7 @@
             // 
             // msT_Sdbqh
             // 
-            this.msT_Sdbqh.Location = new System.Drawing.Point(560, 37);
+            this.msT_Sdbqh.Location = new System.Drawing.Point(539, 37);
             this.msT_Sdbqh.Mask = "0000年90月90日90时00分";
             this.msT_Sdbqh.Name = "msT_Sdbqh";
             this.msT_Sdbqh.Size = new System.Drawing.Size(147, 21);
@@ -244,7 +248,7 @@
             // 
             // txt_Zxr
             // 
-            this.txt_Zxr.Location = new System.Drawing.Point(558, 129);
+            this.txt_Zxr.Location = new System.Drawing.Point(537, 129);
             this.txt_Zxr.Name = "txt_Zxr";
             this.txt_Zxr.ReadOnly = true;
             this.txt_Zxr.Size = new System.Drawing.Size(41, 21);
@@ -309,7 +313,7 @@
             // cb_All
             // 
             this.cb_All.AutoSize = true;
-            this.cb_All.Location = new System.Drawing.Point(774, 42);
+            this.cb_All.Location = new System.Drawing.Point(807, 39);
             this.cb_All.Name = "cb_All";
             this.cb_All.Size = new System.Drawing.Size(48, 16);
             this.cb_All.TabIndex = 75;
@@ -455,6 +459,24 @@
             this.toolStrip1.Size = new System.Drawing.Size(891, 30);
             this.toolStrip1.TabIndex = 73;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // tbn_单项抄读
+            // 
+            this.tbn_单项抄读.Image = global::ht_698._45.Properties.Resources.读取;
+            this.tbn_单项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbn_单项抄读.Name = "tbn_单项抄读";
+            this.tbn_单项抄读.Size = new System.Drawing.Size(85, 27);
+            this.tbn_单项抄读.Text = "单项抄读";
+            this.tbn_单项抄读.Click += new System.EventHandler(this.tbn_单项抄读_Click);
+            // 
+            // tbn_单属性设置
+            // 
+            this.tbn_单属性设置.Image = global::ht_698._45.Properties.Resources.单属性设置1;
+            this.tbn_单属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbn_单属性设置.Name = "tbn_单属性设置";
+            this.tbn_单属性设置.Size = new System.Drawing.Size(99, 27);
+            this.tbn_单属性设置.Text = "单属性设置";
+            this.tbn_单属性设置.Click += new System.EventHandler(this.tbn_单属性设置_Click);
             // 
             // rad_Sd2
             // 
@@ -996,28 +1018,49 @@
             this.chk_All.Text = "全选";
             this.chk_All.UseVisualStyleBackColor = true;
             // 
-            // tbn_单项抄读
+            // textBox1
             // 
-            this.tbn_单项抄读.Image = global::ht_698._45.Properties.Resources.读取;
-            this.tbn_单项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbn_单项抄读.Name = "tbn_单项抄读";
-            this.tbn_单项抄读.Size = new System.Drawing.Size(85, 27);
-            this.tbn_单项抄读.Text = "单项抄读";
-            this.tbn_单项抄读.Click += new System.EventHandler(this.tbn_单项抄读_Click);
+            this.textBox1.Location = new System.Drawing.Point(807, 69);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(51, 21);
+            this.textBox1.TabIndex = 77;
             // 
-            // tbn_单属性设置
+            // checkBox1
             // 
-            this.tbn_单属性设置.Image = global::ht_698._45.Properties.Resources.单属性设置1;
-            this.tbn_单属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbn_单属性设置.Name = "tbn_单属性设置";
-            this.tbn_单属性设置.Size = new System.Drawing.Size(99, 27);
-            this.tbn_单属性设置.Text = "单属性设置";
-            this.tbn_单属性设置.Click += new System.EventHandler(this.tbn_单属性设置_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.checkBox1.Location = new System.Drawing.Point(707, 71);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(96, 16);
+            this.checkBox1.TabIndex = 76;
+            this.checkBox1.Text = "谐波分析次数";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(807, 101);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(51, 21);
+            this.textBox2.TabIndex = 79;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(707, 103);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(84, 16);
+            this.checkBox2.TabIndex = 78;
+            this.checkBox2.Text = "密钥总条数";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // Rates
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(891, 473);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.msT_Sqbqh);
             this.Controls.Add(this.cbx_6);
             this.Controls.Add(this.txt_ZxSd);
@@ -1160,6 +1203,10 @@
         private System.Windows.Forms.ListBox lsb_Ggjr;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox chk_All;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox checkBox2;
 
     }
 }

@@ -140,18 +140,23 @@
             this.chb_8 = new System.Windows.Forms.CheckBox();
             this.chb_9 = new System.Windows.Forms.CheckBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tbn_单项抄读 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tbn_多项抄读 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.tbn_单属性设置 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.tb_多属性设置 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.tb_设置后读取 = new System.Windows.Forms.ToolStripButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.cb_38 = new System.Windows.Forms.CheckBox();
             this.txt_7 = new System.Windows.Forms.TextBox();
@@ -250,7 +255,15 @@
             this.chk_18 = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.btn_disable_page1 = new System.Windows.Forms.Button();
+            this.btn_start_page1 = new System.Windows.Forms.Button();
+            this.chb_3_page1 = new System.Windows.Forms.CheckBox();
+            this.txt_2_page1 = new System.Windows.Forms.TextBox();
             this.txt_0 = new System.Windows.Forms.TextBox();
+            this.txt_1_page1 = new System.Windows.Forms.TextBox();
+            this.chb_1_page1 = new System.Windows.Forms.CheckBox();
             this.chb_All = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.chk_24 = new System.Windows.Forms.CheckBox();
@@ -275,11 +288,72 @@
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.chb_17 = new System.Windows.Forms.CheckBox();
             this.chb_16 = new System.Windows.Forms.CheckBox();
-            this.tbn_单项抄读 = new System.Windows.Forms.ToolStripButton();
-            this.tbn_多项抄读 = new System.Windows.Forms.ToolStripButton();
-            this.tbn_单属性设置 = new System.Windows.Forms.ToolStripButton();
-            this.tb_多属性设置 = new System.Windows.Forms.ToolStripButton();
-            this.tb_设置后读取 = new System.Windows.Forms.ToolStripButton();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.txt_14_page5 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txt_13_page5 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txt_12_page5 = new System.Windows.Forms.TextBox();
+            this.chb6_Page5 = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txt_8_page5 = new System.Windows.Forms.TextBox();
+            this.txt_11_page5 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txt_9_page5 = new System.Windows.Forms.TextBox();
+            this.txt_10_page5 = new System.Windows.Forms.TextBox();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.txt_7_page5 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txt_6_page5 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_5_page5 = new System.Windows.Forms.TextBox();
+            this.txt_4_page5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_3_page5 = new System.Windows.Forms.TextBox();
+            this.chb5_Page5 = new System.Windows.Forms.CheckBox();
+            this.chb2_Page5 = new System.Windows.Forms.CheckBox();
+            this.chk_All_Page5 = new System.Windows.Forms.CheckBox();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.chb1_Page5 = new System.Windows.Forms.CheckBox();
+            this.txt_2_page5 = new System.Windows.Forms.TextBox();
+            this.chb4_Page5 = new System.Windows.Forms.CheckBox();
+            this.txt_1_page5 = new System.Windows.Forms.TextBox();
+            this.chb3_Page5 = new System.Windows.Forms.CheckBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lsb_address = new System.Windows.Forms.ListBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -305,10 +379,21 @@
             this.groupBox3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox28.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox19.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.groupBox24.SuspendLayout();
+            this.groupBox27.SuspendLayout();
+            this.groupBox26.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.groupBox29.SuspendLayout();
+            this.groupBox32.SuspendLayout();
+            this.groupBox31.SuspendLayout();
+            this.groupBox30.SuspendLayout();
             this.SuspendLayout();
             // 
             // tx_7
@@ -538,7 +623,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(789, 450);
+            this.tabPage4.Size = new System.Drawing.Size(789, 502);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "参变量4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1432,6 +1517,15 @@
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // tbn_单项抄读
+            // 
+            this.tbn_单项抄读.Image = global::ht_698._45.Properties.Resources.读取;
+            this.tbn_单项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbn_单项抄读.Name = "tbn_单项抄读";
+            this.tbn_单项抄读.Size = new System.Drawing.Size(85, 27);
+            this.tbn_单项抄读.Text = "单项抄读";
+            this.tbn_单项抄读.Click += new System.EventHandler(this.tbn_单项抄读_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -1441,6 +1535,15 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 30);
+            // 
+            // tbn_多项抄读
+            // 
+            this.tbn_多项抄读.Image = global::ht_698._45.Properties.Resources.多项抄读;
+            this.tbn_多项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbn_多项抄读.Name = "tbn_多项抄读";
+            this.tbn_多项抄读.Size = new System.Drawing.Size(85, 27);
+            this.tbn_多项抄读.Text = "多项抄读";
+            this.tbn_多项抄读.Click += new System.EventHandler(this.tbn_多项抄读_Click);
             // 
             // toolStripSeparator3
             // 
@@ -1472,6 +1575,15 @@
             this.toolStripSeparator8.Name = "toolStripSeparator8";
             this.toolStripSeparator8.Size = new System.Drawing.Size(6, 30);
             // 
+            // tbn_单属性设置
+            // 
+            this.tbn_单属性设置.Image = global::ht_698._45.Properties.Resources.单属性设置1;
+            this.tbn_单属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbn_单属性设置.Name = "tbn_单属性设置";
+            this.tbn_单属性设置.Size = new System.Drawing.Size(99, 27);
+            this.tbn_单属性设置.Text = "单属性设置";
+            this.tbn_单属性设置.Click += new System.EventHandler(this.tbn_单属性设置_Click);
+            // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
@@ -1482,6 +1594,15 @@
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 30);
             // 
+            // tb_多属性设置
+            // 
+            this.tb_多属性设置.Image = global::ht_698._45.Properties.Resources.多属性设置;
+            this.tb_多属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tb_多属性设置.Name = "tb_多属性设置";
+            this.tb_多属性设置.Size = new System.Drawing.Size(99, 27);
+            this.tb_多属性设置.Text = "多属性设置";
+            this.tb_多属性设置.Click += new System.EventHandler(this.tb_多属性设置_Click);
+            // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
@@ -1491,6 +1612,15 @@
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
             this.toolStripSeparator12.Size = new System.Drawing.Size(6, 30);
+            // 
+            // tb_设置后读取
+            // 
+            this.tb_设置后读取.Image = global::ht_698._45.Properties.Resources.设置后读取;
+            this.tb_设置后读取.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tb_设置后读取.Name = "tb_设置后读取";
+            this.tb_设置后读取.Size = new System.Drawing.Size(99, 27);
+            this.tb_设置后读取.Text = "设置后读取";
+            this.tb_设置后读取.Click += new System.EventHandler(this.tb_设置后读取_Click);
             // 
             // timer1
             // 
@@ -1512,7 +1642,7 @@
             // 
             // txt_7
             // 
-            this.txt_7.Location = new System.Drawing.Point(185, 226);
+            this.txt_7.Location = new System.Drawing.Point(185, 202);
             this.txt_7.MaxLength = 4;
             this.txt_7.Name = "txt_7";
             this.txt_7.Size = new System.Drawing.Size(131, 21);
@@ -1520,7 +1650,7 @@
             // 
             // txt_6
             // 
-            this.txt_6.Location = new System.Drawing.Point(185, 187);
+            this.txt_6.Location = new System.Drawing.Point(185, 169);
             this.txt_6.MaxLength = 4;
             this.txt_6.Name = "txt_6";
             this.txt_6.Size = new System.Drawing.Size(131, 21);
@@ -1528,7 +1658,7 @@
             // 
             // txt_4
             // 
-            this.txt_4.Location = new System.Drawing.Point(185, 117);
+            this.txt_4.Location = new System.Drawing.Point(185, 106);
             this.txt_4.MaxLength = 12;
             this.txt_4.Name = "txt_4";
             this.txt_4.Size = new System.Drawing.Size(131, 21);
@@ -1536,7 +1666,7 @@
             // 
             // txt_3
             // 
-            this.txt_3.Location = new System.Drawing.Point(185, 80);
+            this.txt_3.Location = new System.Drawing.Point(185, 75);
             this.txt_3.MaxLength = 32;
             this.txt_3.Name = "txt_3";
             this.txt_3.Size = new System.Drawing.Size(131, 21);
@@ -1544,7 +1674,7 @@
             // 
             // txt_2
             // 
-            this.txt_2.Location = new System.Drawing.Point(185, 48);
+            this.txt_2.Location = new System.Drawing.Point(185, 45);
             this.txt_2.MaxLength = 12;
             this.txt_2.Name = "txt_2";
             this.txt_2.Size = new System.Drawing.Size(131, 21);
@@ -1593,7 +1723,7 @@
             // chk_12
             // 
             this.chk_12.AutoSize = true;
-            this.chk_12.Location = new System.Drawing.Point(28, 396);
+            this.chk_12.Location = new System.Drawing.Point(28, 366);
             this.chk_12.Name = "chk_12";
             this.chk_12.Size = new System.Drawing.Size(96, 16);
             this.chk_12.TabIndex = 63;
@@ -1603,7 +1733,7 @@
             // chk_8
             // 
             this.chk_8.AutoSize = true;
-            this.chk_8.Location = new System.Drawing.Point(28, 264);
+            this.chk_8.Location = new System.Drawing.Point(28, 236);
             this.chk_8.Name = "chk_8";
             this.chk_8.Size = new System.Drawing.Size(120, 16);
             this.chk_8.TabIndex = 62;
@@ -1613,7 +1743,7 @@
             // chk_9
             // 
             this.chk_9.AutoSize = true;
-            this.chk_9.Location = new System.Drawing.Point(28, 298);
+            this.chk_9.Location = new System.Drawing.Point(28, 269);
             this.chk_9.Name = "chk_9";
             this.chk_9.Size = new System.Drawing.Size(96, 16);
             this.chk_9.TabIndex = 60;
@@ -1740,7 +1870,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(789, 450);
+            this.tabPage2.Size = new System.Drawing.Size(789, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "参变量2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -2391,7 +2521,7 @@
             // chk_2
             // 
             this.chk_2.AutoSize = true;
-            this.chk_2.Location = new System.Drawing.Point(28, 50);
+            this.chk_2.Location = new System.Drawing.Point(28, 47);
             this.chk_2.Name = "chk_2";
             this.chk_2.Size = new System.Drawing.Size(48, 16);
             this.chk_2.TabIndex = 58;
@@ -2401,7 +2531,7 @@
             // chk_4
             // 
             this.chk_4.AutoSize = true;
-            this.chk_4.Location = new System.Drawing.Point(28, 122);
+            this.chk_4.Location = new System.Drawing.Point(28, 111);
             this.chk_4.Name = "chk_4";
             this.chk_4.Size = new System.Drawing.Size(72, 16);
             this.chk_4.TabIndex = 56;
@@ -2411,7 +2541,7 @@
             // chk_6
             // 
             this.chk_6.AutoSize = true;
-            this.chk_6.Location = new System.Drawing.Point(28, 192);
+            this.chk_6.Location = new System.Drawing.Point(28, 174);
             this.chk_6.Name = "chk_6";
             this.chk_6.Size = new System.Drawing.Size(108, 16);
             this.chk_6.TabIndex = 55;
@@ -2421,7 +2551,7 @@
             // chk_7
             // 
             this.chk_7.AutoSize = true;
-            this.chk_7.Location = new System.Drawing.Point(28, 228);
+            this.chk_7.Location = new System.Drawing.Point(28, 204);
             this.chk_7.Name = "chk_7";
             this.chk_7.Size = new System.Drawing.Size(108, 16);
             this.chk_7.TabIndex = 54;
@@ -2431,7 +2561,7 @@
             // chk_10
             // 
             this.chk_10.AutoSize = true;
-            this.chk_10.Location = new System.Drawing.Point(28, 331);
+            this.chk_10.Location = new System.Drawing.Point(28, 300);
             this.chk_10.Name = "chk_10";
             this.chk_10.Size = new System.Drawing.Size(120, 16);
             this.chk_10.TabIndex = 53;
@@ -2452,7 +2582,7 @@
             // chk_3
             // 
             this.chk_3.AutoSize = true;
-            this.chk_3.Location = new System.Drawing.Point(28, 85);
+            this.chk_3.Location = new System.Drawing.Point(28, 80);
             this.chk_3.Name = "chk_3";
             this.chk_3.Size = new System.Drawing.Size(96, 16);
             this.chk_3.TabIndex = 57;
@@ -2475,16 +2605,21 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tabControl1.Location = new System.Drawing.Point(0, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(797, 476);
+            this.tabControl1.Size = new System.Drawing.Size(797, 528);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox28);
             this.tabPage1.Controls.Add(this.txt_0);
+            this.tabPage1.Controls.Add(this.txt_1_page1);
+            this.tabPage1.Controls.Add(this.chb_1_page1);
             this.tabPage1.Controls.Add(this.chb_All);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.txt_11);
@@ -2516,18 +2651,92 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(789, 450);
+            this.tabPage1.Size = new System.Drawing.Size(789, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "参变量1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.label28);
+            this.groupBox28.Controls.Add(this.btn_disable_page1);
+            this.groupBox28.Controls.Add(this.btn_start_page1);
+            this.groupBox28.Controls.Add(this.chb_3_page1);
+            this.groupBox28.Controls.Add(this.txt_2_page1);
+            this.groupBox28.Location = new System.Drawing.Point(28, 423);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Size = new System.Drawing.Size(297, 76);
+            this.groupBox28.TabIndex = 100;
+            this.groupBox28.TabStop = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 26);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 12);
+            this.label28.TabIndex = 107;
+            this.label28.Text = "时钟源";
+            // 
+            // btn_disable_page1
+            // 
+            this.btn_disable_page1.Location = new System.Drawing.Point(157, 47);
+            this.btn_disable_page1.Name = "btn_disable_page1";
+            this.btn_disable_page1.Size = new System.Drawing.Size(54, 23);
+            this.btn_disable_page1.TabIndex = 106;
+            this.btn_disable_page1.Text = "禁用";
+            this.btn_disable_page1.UseVisualStyleBackColor = true;
+            // 
+            // btn_start_page1
+            // 
+            this.btn_start_page1.Location = new System.Drawing.Point(234, 47);
+            this.btn_start_page1.Name = "btn_start_page1";
+            this.btn_start_page1.Size = new System.Drawing.Size(52, 23);
+            this.btn_start_page1.TabIndex = 105;
+            this.btn_start_page1.Text = "启动";
+            this.btn_start_page1.UseVisualStyleBackColor = true;
+            // 
+            // chb_3_page1
+            // 
+            this.chb_3_page1.AutoSize = true;
+            this.chb_3_page1.Location = new System.Drawing.Point(0, 0);
+            this.chb_3_page1.Name = "chb_3_page1";
+            this.chb_3_page1.Size = new System.Drawing.Size(60, 16);
+            this.chb_3_page1.TabIndex = 93;
+            this.chb_3_page1.Text = "时钟源";
+            this.chb_3_page1.UseVisualStyleBackColor = true;
+            // 
+            // txt_2_page1
+            // 
+            this.txt_2_page1.Location = new System.Drawing.Point(157, 17);
+            this.txt_2_page1.Name = "txt_2_page1";
+            this.txt_2_page1.Size = new System.Drawing.Size(131, 21);
+            this.txt_2_page1.TabIndex = 104;
+            // 
             // txt_0
             // 
-            this.txt_0.Location = new System.Drawing.Point(136, 423);
+            this.txt_0.Location = new System.Drawing.Point(720, 418);
             this.txt_0.Name = "txt_0";
-            this.txt_0.Size = new System.Drawing.Size(31, 21);
-            this.txt_0.TabIndex = 101;
+            this.txt_0.Size = new System.Drawing.Size(38, 21);
+            this.txt_0.TabIndex = 105;
             this.txt_0.Visible = false;
+            // 
+            // txt_1_page1
+            // 
+            this.txt_1_page1.Location = new System.Drawing.Point(185, 394);
+            this.txt_1_page1.Name = "txt_1_page1";
+            this.txt_1_page1.Size = new System.Drawing.Size(131, 21);
+            this.txt_1_page1.TabIndex = 102;
+            // 
+            // chb_1_page1
+            // 
+            this.chb_1_page1.AutoSize = true;
+            this.chb_1_page1.Location = new System.Drawing.Point(28, 396);
+            this.chb_1_page1.Name = "chb_1_page1";
+            this.chb_1_page1.Size = new System.Drawing.Size(60, 16);
+            this.chb_1_page1.TabIndex = 101;
+            this.chb_1_page1.Text = "组地址";
+            this.chb_1_page1.UseVisualStyleBackColor = true;
             // 
             // chb_All
             // 
@@ -2624,7 +2833,7 @@
             // 
             // txt_11
             // 
-            this.txt_11.Location = new System.Drawing.Point(185, 362);
+            this.txt_11.Location = new System.Drawing.Point(185, 333);
             this.txt_11.Name = "txt_11";
             this.txt_11.Size = new System.Drawing.Size(131, 21);
             this.txt_11.TabIndex = 98;
@@ -2632,7 +2841,7 @@
             // chk_11
             // 
             this.chk_11.AutoSize = true;
-            this.chk_11.Location = new System.Drawing.Point(28, 364);
+            this.chk_11.Location = new System.Drawing.Point(28, 335);
             this.chk_11.Name = "chk_11";
             this.chk_11.Size = new System.Drawing.Size(120, 16);
             this.chk_11.TabIndex = 97;
@@ -2657,7 +2866,7 @@
             this.groupBox1.Controls.Add(this.chk_19);
             this.groupBox1.Controls.Add(this.chk_18);
             this.groupBox1.Controls.Add(this.chk_17);
-            this.groupBox1.Location = new System.Drawing.Point(345, 136);
+            this.groupBox1.Location = new System.Drawing.Point(345, 135);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(345, 289);
             this.groupBox1.TabIndex = 96;
@@ -2675,7 +2884,7 @@
             // 
             // txt_5
             // 
-            this.txt_5.Location = new System.Drawing.Point(185, 153);
+            this.txt_5.Location = new System.Drawing.Point(185, 137);
             this.txt_5.MaxLength = 12;
             this.txt_5.Name = "txt_5";
             this.txt_5.Size = new System.Drawing.Size(131, 21);
@@ -2684,7 +2893,7 @@
             // chk_5
             // 
             this.chk_5.AutoSize = true;
-            this.chk_5.Location = new System.Drawing.Point(28, 158);
+            this.chk_5.Location = new System.Drawing.Point(28, 142);
             this.chk_5.Name = "chk_5";
             this.chk_5.Size = new System.Drawing.Size(72, 16);
             this.chk_5.TabIndex = 94;
@@ -2693,28 +2902,28 @@
             // 
             // txt_10
             // 
-            this.txt_10.Location = new System.Drawing.Point(185, 331);
+            this.txt_10.Location = new System.Drawing.Point(185, 300);
             this.txt_10.Name = "txt_10";
             this.txt_10.Size = new System.Drawing.Size(131, 21);
             this.txt_10.TabIndex = 93;
             // 
             // txt_12
             // 
-            this.txt_12.Location = new System.Drawing.Point(185, 394);
+            this.txt_12.Location = new System.Drawing.Point(185, 364);
             this.txt_12.Name = "txt_12";
             this.txt_12.Size = new System.Drawing.Size(131, 21);
             this.txt_12.TabIndex = 82;
             // 
             // txt_9
             // 
-            this.txt_9.Location = new System.Drawing.Point(185, 296);
+            this.txt_9.Location = new System.Drawing.Point(185, 267);
             this.txt_9.Name = "txt_9";
             this.txt_9.Size = new System.Drawing.Size(131, 21);
             this.txt_9.TabIndex = 79;
             // 
             // txt_8
             // 
-            this.txt_8.Location = new System.Drawing.Point(185, 262);
+            this.txt_8.Location = new System.Drawing.Point(185, 234);
             this.txt_8.Name = "txt_8";
             this.txt_8.Size = new System.Drawing.Size(131, 21);
             this.txt_8.TabIndex = 78;
@@ -2734,7 +2943,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(789, 450);
+            this.tabPage3.Size = new System.Drawing.Size(789, 502);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "参变量3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2791,55 +3000,631 @@
             this.chb_16.Text = "电压考核上限";
             this.chb_16.UseVisualStyleBackColor = true;
             // 
-            // tbn_单项抄读
+            // tabPage5
             // 
-            this.tbn_单项抄读.Image = global::ht_698._45.Properties.Resources.读取;
-            this.tbn_单项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbn_单项抄读.Name = "tbn_单项抄读";
-            this.tbn_单项抄读.Size = new System.Drawing.Size(85, 27);
-            this.tbn_单项抄读.Text = "单项抄读";
-            this.tbn_单项抄读.Click += new System.EventHandler(this.tbn_单项抄读_Click);
+            this.tabPage5.Controls.Add(this.groupBox24);
+            this.tabPage5.Controls.Add(this.chk_All_Page5);
+            this.tabPage5.Controls.Add(this.groupBox25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(789, 502);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "参变量5";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tbn_多项抄读
+            // groupBox24
             // 
-            this.tbn_多项抄读.Image = global::ht_698._45.Properties.Resources.多项抄读;
-            this.tbn_多项抄读.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbn_多项抄读.Name = "tbn_多项抄读";
-            this.tbn_多项抄读.Size = new System.Drawing.Size(85, 27);
-            this.tbn_多项抄读.Text = "多项抄读";
-            this.tbn_多项抄读.Click += new System.EventHandler(this.tbn_多项抄读_Click);
+            this.groupBox24.Controls.Add(this.groupBox27);
+            this.groupBox24.Controls.Add(this.groupBox26);
+            this.groupBox24.Controls.Add(this.chb2_Page5);
+            this.groupBox24.Location = new System.Drawing.Point(8, 137);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(638, 240);
+            this.groupBox24.TabIndex = 69;
+            this.groupBox24.TabStop = false;
             // 
-            // tbn_单属性设置
+            // groupBox27
             // 
-            this.tbn_单属性设置.Image = global::ht_698._45.Properties.Resources.单属性设置1;
-            this.tbn_单属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tbn_单属性设置.Name = "tbn_单属性设置";
-            this.tbn_单属性设置.Size = new System.Drawing.Size(99, 27);
-            this.tbn_单属性设置.Text = "单属性设置";
-            this.tbn_单属性设置.Click += new System.EventHandler(this.tbn_单属性设置_Click);
+            this.groupBox27.Controls.Add(this.txt_14_page5);
+            this.groupBox27.Controls.Add(this.label27);
+            this.groupBox27.Controls.Add(this.txt_13_page5);
+            this.groupBox27.Controls.Add(this.label26);
+            this.groupBox27.Controls.Add(this.txt_12_page5);
+            this.groupBox27.Controls.Add(this.chb6_Page5);
+            this.groupBox27.Controls.Add(this.label13);
+            this.groupBox27.Controls.Add(this.txt_8_page5);
+            this.groupBox27.Controls.Add(this.txt_11_page5);
+            this.groupBox27.Controls.Add(this.label22);
+            this.groupBox27.Controls.Add(this.label14);
+            this.groupBox27.Controls.Add(this.label21);
+            this.groupBox27.Controls.Add(this.label20);
+            this.groupBox27.Controls.Add(this.txt_9_page5);
+            this.groupBox27.Controls.Add(this.txt_10_page5);
+            this.groupBox27.Location = new System.Drawing.Point(333, 24);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(284, 200);
+            this.groupBox27.TabIndex = 67;
+            this.groupBox27.TabStop = false;
             // 
-            // tb_多属性设置
+            // txt_14_page5
             // 
-            this.tb_多属性设置.Image = global::ht_698._45.Properties.Resources.多属性设置;
-            this.tb_多属性设置.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tb_多属性设置.Name = "tb_多属性设置";
-            this.tb_多属性设置.Size = new System.Drawing.Size(99, 27);
-            this.tb_多属性设置.Text = "多属性设置";
-            this.tb_多属性设置.Click += new System.EventHandler(this.tb_多属性设置_Click);
+            this.txt_14_page5.Location = new System.Drawing.Point(138, 173);
+            this.txt_14_page5.Name = "txt_14_page5";
+            this.txt_14_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_14_page5.TabIndex = 72;
             // 
-            // tb_设置后读取
+            // label27
             // 
-            this.tb_设置后读取.Image = global::ht_698._45.Properties.Resources.设置后读取;
-            this.tb_设置后读取.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tb_设置后读取.Name = "tb_设置后读取";
-            this.tb_设置后读取.Size = new System.Drawing.Size(99, 27);
-            this.tb_设置后读取.Text = "设置后读取";
-            this.tb_设置后读取.Click += new System.EventHandler(this.tb_设置后读取_Click);
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(15, 176);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(77, 12);
+            this.label27.TabIndex = 71;
+            this.label27.Text = "厂商扩展信息";
+            // 
+            // txt_13_page5
+            // 
+            this.txt_13_page5.Location = new System.Drawing.Point(138, 146);
+            this.txt_13_page5.Name = "txt_13_page5";
+            this.txt_13_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_13_page5.TabIndex = 70;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(15, 149);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(77, 12);
+            this.label26.TabIndex = 69;
+            this.label26.Text = "硬件版本日期";
+            // 
+            // txt_12_page5
+            // 
+            this.txt_12_page5.Location = new System.Drawing.Point(138, 119);
+            this.txt_12_page5.Name = "txt_12_page5";
+            this.txt_12_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_12_page5.TabIndex = 68;
+            // 
+            // chb6_Page5
+            // 
+            this.chb6_Page5.AutoSize = true;
+            this.chb6_Page5.Location = new System.Drawing.Point(0, 0);
+            this.chb6_Page5.Name = "chb6_Page5";
+            this.chb6_Page5.Size = new System.Drawing.Size(96, 16);
+            this.chb6_Page5.TabIndex = 1;
+            this.chb6_Page5.Text = "模组版本信息";
+            this.chb6_Page5.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(15, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 12);
+            this.label13.TabIndex = 67;
+            this.label13.Text = "硬件版本号";
+            // 
+            // txt_8_page5
+            // 
+            this.txt_8_page5.Location = new System.Drawing.Point(138, 20);
+            this.txt_8_page5.Name = "txt_8_page5";
+            this.txt_8_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_8_page5.TabIndex = 59;
+            // 
+            // txt_11_page5
+            // 
+            this.txt_11_page5.Location = new System.Drawing.Point(137, 95);
+            this.txt_11_page5.Name = "txt_11_page5";
+            this.txt_11_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_11_page5.TabIndex = 66;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(15, 23);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(77, 12);
+            this.label22.TabIndex = 60;
+            this.label22.Text = "模组逻辑地址";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(14, 98);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 12);
+            this.label14.TabIndex = 65;
+            this.label14.Text = "软件版本日期";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(15, 48);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 12);
+            this.label21.TabIndex = 61;
+            this.label21.Text = "厂商代码";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(14, 73);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 12);
+            this.label20.TabIndex = 64;
+            this.label20.Text = "软件版本号";
+            // 
+            // txt_9_page5
+            // 
+            this.txt_9_page5.Location = new System.Drawing.Point(137, 45);
+            this.txt_9_page5.Name = "txt_9_page5";
+            this.txt_9_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_9_page5.TabIndex = 62;
+            // 
+            // txt_10_page5
+            // 
+            this.txt_10_page5.Location = new System.Drawing.Point(138, 70);
+            this.txt_10_page5.Name = "txt_10_page5";
+            this.txt_10_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_10_page5.TabIndex = 63;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.txt_7_page5);
+            this.groupBox26.Controls.Add(this.label19);
+            this.groupBox26.Controls.Add(this.txt_6_page5);
+            this.groupBox26.Controls.Add(this.label15);
+            this.groupBox26.Controls.Add(this.label18);
+            this.groupBox26.Controls.Add(this.txt_5_page5);
+            this.groupBox26.Controls.Add(this.txt_4_page5);
+            this.groupBox26.Controls.Add(this.label11);
+            this.groupBox26.Controls.Add(this.label12);
+            this.groupBox26.Controls.Add(this.txt_3_page5);
+            this.groupBox26.Controls.Add(this.chb5_Page5);
+            this.groupBox26.Location = new System.Drawing.Point(9, 24);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(284, 140);
+            this.groupBox26.TabIndex = 66;
+            this.groupBox26.TabStop = false;
+            // 
+            // txt_7_page5
+            // 
+            this.txt_7_page5.Location = new System.Drawing.Point(135, 119);
+            this.txt_7_page5.Name = "txt_7_page5";
+            this.txt_7_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_7_page5.TabIndex = 58;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(12, 122);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(77, 12);
+            this.label19.TabIndex = 57;
+            this.label19.Text = "模组通信端口";
+            // 
+            // txt_6_page5
+            // 
+            this.txt_6_page5.Location = new System.Drawing.Point(134, 95);
+            this.txt_6_page5.Name = "txt_6_page5";
+            this.txt_6_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_6_page5.TabIndex = 56;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(11, 98);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 12);
+            this.label15.TabIndex = 55;
+            this.label15.Text = "模组序列号";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(11, 73);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(53, 12);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "模组类别";
+            // 
+            // txt_5_page5
+            // 
+            this.txt_5_page5.Location = new System.Drawing.Point(135, 70);
+            this.txt_5_page5.Name = "txt_5_page5";
+            this.txt_5_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_5_page5.TabIndex = 53;
+            // 
+            // txt_4_page5
+            // 
+            this.txt_4_page5.Location = new System.Drawing.Point(134, 45);
+            this.txt_4_page5.Name = "txt_4_page5";
+            this.txt_4_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_4_page5.TabIndex = 52;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 12);
+            this.label11.TabIndex = 43;
+            this.label11.Text = "逻辑地址";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 23);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 12);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "模组描述符";
+            // 
+            // txt_3_page5
+            // 
+            this.txt_3_page5.Location = new System.Drawing.Point(135, 20);
+            this.txt_3_page5.Name = "txt_3_page5";
+            this.txt_3_page5.Size = new System.Drawing.Size(126, 21);
+            this.txt_3_page5.TabIndex = 39;
+            // 
+            // chb5_Page5
+            // 
+            this.chb5_Page5.AutoSize = true;
+            this.chb5_Page5.Location = new System.Drawing.Point(0, 0);
+            this.chb5_Page5.Name = "chb5_Page5";
+            this.chb5_Page5.Size = new System.Drawing.Size(84, 16);
+            this.chb5_Page5.TabIndex = 1;
+            this.chb5_Page5.Text = "模组(只读)";
+            this.chb5_Page5.UseVisualStyleBackColor = true;
+            // 
+            // chb2_Page5
+            // 
+            this.chb2_Page5.AutoSize = true;
+            this.chb2_Page5.Location = new System.Drawing.Point(0, 0);
+            this.chb2_Page5.Name = "chb2_Page5";
+            this.chb2_Page5.Size = new System.Drawing.Size(108, 16);
+            this.chb2_Page5.TabIndex = 1;
+            this.chb2_Page5.Text = "电能表模组列表";
+            this.chb2_Page5.UseVisualStyleBackColor = true;
+            // 
+            // chk_All_Page5
+            // 
+            this.chk_All_Page5.AutoSize = true;
+            this.chk_All_Page5.Location = new System.Drawing.Point(413, 20);
+            this.chk_All_Page5.Name = "chk_All_Page5";
+            this.chk_All_Page5.Size = new System.Drawing.Size(48, 16);
+            this.chk_All_Page5.TabIndex = 69;
+            this.chk_All_Page5.Text = "全选";
+            this.chk_All_Page5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.chb1_Page5);
+            this.groupBox25.Controls.Add(this.txt_2_page5);
+            this.groupBox25.Controls.Add(this.chb4_Page5);
+            this.groupBox25.Controls.Add(this.txt_1_page5);
+            this.groupBox25.Controls.Add(this.chb3_Page5);
+            this.groupBox25.Location = new System.Drawing.Point(8, 20);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(209, 80);
+            this.groupBox25.TabIndex = 68;
+            this.groupBox25.TabStop = false;
+            // 
+            // chb1_Page5
+            // 
+            this.chb1_Page5.AutoSize = true;
+            this.chb1_Page5.Location = new System.Drawing.Point(0, 0);
+            this.chb1_Page5.Name = "chb1_Page5";
+            this.chb1_Page5.Size = new System.Drawing.Size(144, 16);
+            this.chb1_Page5.TabIndex = 1;
+            this.chb1_Page5.Text = "电能表操作结果(只读)";
+            this.chb1_Page5.UseVisualStyleBackColor = true;
+            // 
+            // txt_2_page5
+            // 
+            this.txt_2_page5.Location = new System.Drawing.Point(101, 50);
+            this.txt_2_page5.Name = "txt_2_page5";
+            this.txt_2_page5.Size = new System.Drawing.Size(83, 21);
+            this.txt_2_page5.TabIndex = 27;
+            // 
+            // chb4_Page5
+            // 
+            this.chb4_Page5.AutoSize = true;
+            this.chb4_Page5.Enabled = false;
+            this.chb4_Page5.ForeColor = System.Drawing.Color.Blue;
+            this.chb4_Page5.Location = new System.Drawing.Point(8, 52);
+            this.chb4_Page5.Name = "chb4_Page5";
+            this.chb4_Page5.Size = new System.Drawing.Size(72, 16);
+            this.chb4_Page5.TabIndex = 36;
+            this.chb4_Page5.Text = "操作类型";
+            this.chb4_Page5.UseVisualStyleBackColor = true;
+            // 
+            // txt_1_page5
+            // 
+            this.txt_1_page5.Location = new System.Drawing.Point(101, 19);
+            this.txt_1_page5.Name = "txt_1_page5";
+            this.txt_1_page5.Size = new System.Drawing.Size(83, 21);
+            this.txt_1_page5.TabIndex = 26;
+            // 
+            // chb3_Page5
+            // 
+            this.chb3_Page5.AutoSize = true;
+            this.chb3_Page5.Enabled = false;
+            this.chb3_Page5.ForeColor = System.Drawing.Color.Blue;
+            this.chb3_Page5.Location = new System.Drawing.Point(8, 23);
+            this.chb3_Page5.Name = "chb3_Page5";
+            this.chb3_Page5.Size = new System.Drawing.Size(72, 16);
+            this.chb3_Page5.TabIndex = 35;
+            this.chb3_Page5.Text = "升级结果";
+            this.chb3_Page5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBox29);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(789, 502);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "参变量6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.button3);
+            this.groupBox29.Controls.Add(this.button2);
+            this.groupBox29.Controls.Add(this.button1);
+            this.groupBox29.Controls.Add(this.groupBox32);
+            this.groupBox29.Controls.Add(this.label37);
+            this.groupBox29.Controls.Add(this.textBox9);
+            this.groupBox29.Controls.Add(this.label36);
+            this.groupBox29.Controls.Add(this.textBox7);
+            this.groupBox29.Controls.Add(this.label35);
+            this.groupBox29.Controls.Add(this.textBox1);
+            this.groupBox29.Controls.Add(this.groupBox31);
+            this.groupBox29.Controls.Add(this.groupBox30);
+            this.groupBox29.Location = new System.Drawing.Point(8, 16);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(547, 364);
+            this.groupBox29.TabIndex = 0;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "计量配置参数";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(263, 325);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(130, 26);
+            this.button3.TabIndex = 75;
+            this.button3.Text = "停止采样数据输出";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(123, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(130, 26);
+            this.button2.TabIndex = 74;
+            this.button2.Text = "启动采样数据输出";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(404, 325);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 26);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "采样数据输出通道";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Controls.Add(this.checkBox1);
+            this.groupBox32.Controls.Add(this.lsb_address);
+            this.groupBox32.Location = new System.Drawing.Point(306, 20);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Size = new System.Drawing.Size(235, 125);
+            this.groupBox32.TabIndex = 67;
+            this.groupBox32.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(180, 16);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "输出模块逻辑地址列表(只读)";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // lsb_address
+            // 
+            this.lsb_address.FormattingEnabled = true;
+            this.lsb_address.ItemHeight = 12;
+            this.lsb_address.Location = new System.Drawing.Point(8, 22);
+            this.lsb_address.Name = "lsb_address";
+            this.lsb_address.Size = new System.Drawing.Size(220, 88);
+            this.lsb_address.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(46, 294);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(77, 12);
+            this.label37.TabIndex = 72;
+            this.label37.Text = "采样数据长度";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(142, 291);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(126, 21);
+            this.textBox9.TabIndex = 71;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(46, 267);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(77, 12);
+            this.label36.TabIndex = 70;
+            this.label36.Text = "采样周波点数";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(142, 264);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(126, 21);
+            this.textBox7.TabIndex = 69;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(46, 239);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(77, 12);
+            this.label35.TabIndex = 68;
+            this.label35.Text = "偏移小数位数";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(142, 236);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(126, 21);
+            this.textBox1.TabIndex = 67;
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.label29);
+            this.groupBox31.Controls.Add(this.label34);
+            this.groupBox31.Controls.Add(this.textBox6);
+            this.groupBox31.Controls.Add(this.textBox8);
+            this.groupBox31.Location = new System.Drawing.Point(22, 151);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Size = new System.Drawing.Size(278, 79);
+            this.groupBox31.TabIndex = 67;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "一区间零线电流系数";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(26, 24);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(53, 12);
+            this.label29.TabIndex = 60;
+            this.label29.Text = "电流区间";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(26, 49);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(77, 12);
+            this.label34.TabIndex = 61;
+            this.label34.Text = "零线电流系数";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(120, 46);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(126, 21);
+            this.textBox6.TabIndex = 62;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(121, 21);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(126, 21);
+            this.textBox8.TabIndex = 59;
+            // 
+            // groupBox30
+            // 
+            this.groupBox30.Controls.Add(this.label33);
+            this.groupBox30.Controls.Add(this.textBox3);
+            this.groupBox30.Controls.Add(this.label32);
+            this.groupBox30.Controls.Add(this.textBox4);
+            this.groupBox30.Controls.Add(this.label31);
+            this.groupBox30.Controls.Add(this.textBox2);
+            this.groupBox30.Controls.Add(this.label30);
+            this.groupBox30.Controls.Add(this.textBox5);
+            this.groupBox30.Location = new System.Drawing.Point(22, 20);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Size = new System.Drawing.Size(278, 125);
+            this.groupBox30.TabIndex = 0;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "一区间计量系数";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(26, 24);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(53, 12);
+            this.label33.TabIndex = 60;
+            this.label33.Text = "电流区间";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(122, 71);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(126, 21);
+            this.textBox3.TabIndex = 63;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(26, 49);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(53, 12);
+            this.label32.TabIndex = 61;
+            this.label32.Text = "电压系数";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(121, 46);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(126, 21);
+            this.textBox4.TabIndex = 62;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(25, 74);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(53, 12);
+            this.label31.TabIndex = 64;
+            this.label31.Text = "电流系数";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(121, 96);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(126, 21);
+            this.textBox2.TabIndex = 66;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(25, 99);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(53, 12);
+            this.label30.TabIndex = 65;
+            this.label30.Text = "相位系数";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(122, 21);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(126, 21);
+            this.textBox5.TabIndex = 59;
             // 
             // Parameter
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(797, 509);
+            this.ClientSize = new System.Drawing.Size(797, 561);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Parameter";
@@ -2895,6 +3680,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox28.ResumeLayout(false);
+            this.groupBox28.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -2903,6 +3690,25 @@
             this.tabPage3.PerformLayout();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.groupBox24.ResumeLayout(false);
+            this.groupBox24.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox27.PerformLayout();
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
+            this.groupBox32.ResumeLayout(false);
+            this.groupBox32.PerformLayout();
+            this.groupBox31.ResumeLayout(false);
+            this.groupBox31.PerformLayout();
+            this.groupBox30.ResumeLayout(false);
+            this.groupBox30.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3135,7 +3941,6 @@
         private System.Windows.Forms.CheckBox chk_18;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox txt_0;
         private System.Windows.Forms.CheckBox chb_All;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox chk_24;
@@ -3160,5 +3965,80 @@
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.CheckBox chb_17;
         private System.Windows.Forms.CheckBox chb_16;
+        private System.Windows.Forms.TextBox txt_2_page1;
+        private System.Windows.Forms.TextBox txt_1_page1;
+        private System.Windows.Forms.CheckBox chb_1_page1;
+        private System.Windows.Forms.TextBox txt_0;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.GroupBox groupBox27;
+        private System.Windows.Forms.CheckBox chb6_Page5;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.TextBox txt_4_page5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_3_page5;
+        private System.Windows.Forms.CheckBox chb5_Page5;
+        private System.Windows.Forms.CheckBox chb2_Page5;
+        private System.Windows.Forms.CheckBox chk_All_Page5;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private System.Windows.Forms.CheckBox chb1_Page5;
+        private System.Windows.Forms.TextBox txt_2_page5;
+        private System.Windows.Forms.CheckBox chb4_Page5;
+        private System.Windows.Forms.TextBox txt_1_page5;
+        private System.Windows.Forms.CheckBox chb3_Page5;
+        private System.Windows.Forms.TextBox txt_6_page5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txt_5_page5;
+        private System.Windows.Forms.TextBox txt_14_page5;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txt_13_page5;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txt_12_page5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txt_8_page5;
+        private System.Windows.Forms.TextBox txt_11_page5;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txt_9_page5;
+        private System.Windows.Forms.TextBox txt_10_page5;
+        private System.Windows.Forms.TextBox txt_7_page5;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.GroupBox groupBox28;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button btn_disable_page1;
+        private System.Windows.Forms.Button btn_start_page1;
+        private System.Windows.Forms.CheckBox chb_3_page1;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox31;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.GroupBox groupBox30;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ListBox lsb_address;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

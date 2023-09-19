@@ -177,18 +177,6 @@ namespace ht_698._45.UI
             
         }
 
-        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form form in base.MdiChildren)
-            {
-                if (form.Name == "Aboat")
-                {
-                    form.Activate();
-                    return;
-                }
-            }
-            new Aboat(this).Show();
-        }
         private void GetMessage()
         {
             try
@@ -654,15 +642,36 @@ namespace ht_698._45.UI
                 TXB_Rec.Text = "";
             }
         }
-        /// <summary>
-        /// 获取皮肤选中项文本
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        //private void pfu_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        //{
-        //    this.iniFile1.IniWriteValue("Skin", "skin",e.ClickedItem.Text);
-        //    Application.DoEvents();
-        //}
+
+        private void toolStripMenuItem1_MouseEnter(object sender, EventArgs e)
+        {
+            this.CmbLogical.Focus();
+        }
+
+        private void 集合类接口toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in base.MdiChildren)
+            {
+                if (form.Name == "FrmCollection")
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            new FrmCollection(this).Show();
+        }
+
+        private void 关于ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            foreach (Form form in base.MdiChildren)
+            {
+                if (form.Name == "Aboat")
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            new Aboat(this).Show();
+        }
     }
 }

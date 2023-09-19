@@ -266,6 +266,12 @@
     <Compile Include="UI\Freeze.Designer.cs">
       <DependentUpon>Freeze.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FrmCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmCollection.Designer.cs">
+      <DependentUpon>FrmCollection.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\InnerCommand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -443,6 +449,9 @@
     <EmbeddedResource Include="UI\Freeze.resx">
       <DependentUpon>Freeze.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmCollection.resx">
+      <DependentUpon>FrmCollection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\InnerCommand.resx">
       <DependentUpon>InnerCommand.cs</DependentUpon>
     </EmbeddedResource>
@@ -531,6 +540,7 @@
     <Content Include="Resources\test1.ico" />
     <Content Include="Resources\test1.png" />
     <Content Include="Resources\time.png" />
+    <None Include="Resources\集合类接口.png" />
     <None Include="Resources\主界面背景.jpg" />
     <Content Include="Resources\主界面背景.png" />
     <Content Include="Resources\保存 %281%29.png" />
