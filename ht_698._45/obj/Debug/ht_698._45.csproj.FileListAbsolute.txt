@@ -182,3 +182,7 @@ F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.Wg_ModeF
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.载波成功率.resources
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.csproj.GenerateResource.Cache
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698.45.exe.licenses
+<<<<<<< HEAD
+=======
+F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.FrmCollection.resources
+>>>>>>> feature

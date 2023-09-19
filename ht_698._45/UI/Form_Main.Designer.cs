@@ -96,21 +96,26 @@
             this.toolStripTextBox3 = new System.Windows.Forms.ToolStripTextBox();
             this.远程控制ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox4 = new System.Windows.Forms.ToolStripTextBox();
+            this.集合类接口toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox13 = new System.Windows.Forms.ToolStripTextBox();
             this.安全传输方式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tcb_密钥选择 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripTextBox5 = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CmbLogical = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripTextBox12 = new System.Windows.Forms.ToolStripTextBox();
             this.批操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox6 = new System.Windows.Forms.ToolStripTextBox();
             this.内部进厂命令ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox7 = new System.Windows.Forms.ToolStripTextBox();
             this.测试工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox8 = new System.Windows.Forms.ToolStripTextBox();
-            this.报文解析toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox9 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripTextBox11 = new System.Windows.Forms.ToolStripTextBox();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox10 = new System.Windows.Forms.ToolStripTextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
+            this.报文解析toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator21 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -123,7 +128,12 @@
             this.系统管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统配置ToolStripMenuItem,
             this.toolStripSeparator16,
+            this.报文解析toolStripMenuItem1,
+            this.toolStripSeparator20,
+            this.关于ToolStripMenuItem,
+            this.toolStripSeparator21,
             this.pfu});
+            this.系统管理ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.系统管理ToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.系统管理ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.系统管理2;
             this.系统管理ToolStripMenuItem.Name = "系统管理ToolStripMenuItem";
@@ -133,23 +143,24 @@
             // 系统配置ToolStripMenuItem
             // 
             this.系统配置ToolStripMenuItem.Name = "系统配置ToolStripMenuItem";
-            this.系统配置ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.系统配置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.系统配置ToolStripMenuItem.Text = "系统配置";
             this.系统配置ToolStripMenuItem.Click += new System.EventHandler(this.系统配置ToolStripMenuItem_Click);
             // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(121, 6);
+            this.toolStripSeparator16.Size = new System.Drawing.Size(149, 6);
             // 
             // pfu
             // 
             this.pfu.Name = "pfu";
-            this.pfu.Size = new System.Drawing.Size(124, 22);
+            this.pfu.Size = new System.Drawing.Size(152, 22);
             this.pfu.Text = "皮肤";
             // 
             // 退出ToolStripMenuItem1
             // 
+            this.退出ToolStripMenuItem1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.退出ToolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
             this.退出ToolStripMenuItem1.Image = global::ht_698._45.Properties.Resources.退出;
             this.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1";
@@ -171,7 +182,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 279);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.ShowItemToolTips = true;
-            this.statusStrip1.Size = new System.Drawing.Size(1341, 27);
+            this.statusStrip1.Size = new System.Drawing.Size(1498, 27);
             this.statusStrip1.TabIndex = 16;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -247,7 +258,7 @@
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.splitter1.Location = new System.Drawing.Point(0, 306);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(1341, 2);
+            this.splitter1.Size = new System.Drawing.Size(1498, 2);
             this.splitter1.TabIndex = 15;
             this.splitter1.TabStop = false;
             // 
@@ -258,7 +269,7 @@
             this.TXB_Rec.Multiline = true;
             this.TXB_Rec.Name = "TXB_Rec";
             this.TXB_Rec.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TXB_Rec.Size = new System.Drawing.Size(1341, 106);
+            this.TXB_Rec.Size = new System.Drawing.Size(1498, 106);
             this.TXB_Rec.TabIndex = 14;
             // 
             // timer1
@@ -286,25 +297,26 @@
             this.toolStripTextBox3,
             this.远程控制ToolStripMenuItem1,
             this.toolStripTextBox4,
+            this.集合类接口toolStripMenuItem10,
+            this.toolStripTextBox13,
             this.安全传输方式ToolStripMenuItem,
             this.tcb_密钥选择,
             this.toolStripTextBox5,
+            this.toolStripMenuItem1,
+            this.CmbLogical,
+            this.toolStripTextBox12,
             this.批操作ToolStripMenuItem,
             this.toolStripTextBox6,
             this.内部进厂命令ToolStripMenuItem,
             this.toolStripTextBox7,
             this.测试工具ToolStripMenuItem,
             this.toolStripTextBox8,
-            this.报文解析toolStripMenuItem1,
-            this.toolStripTextBox9,
             this.系统管理ToolStripMenuItem,
             this.toolStripTextBox11,
-            this.关于ToolStripMenuItem,
-            this.toolStripTextBox10,
             this.退出ToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1341, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1498, 29);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -316,6 +328,7 @@
             this.串口配置ToolStripMenuItem,
             this.toolStripSeparator1,
             this.iP参数配置ToolStripMenuItem});
+            this.通信参数配置ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.通信参数配置ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.通信参数配置ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.设置2;
             this.通信参数配置ToolStripMenuItem.Name = "通信参数配置ToolStripMenuItem";
@@ -325,19 +338,19 @@
             // 串口配置ToolStripMenuItem
             // 
             this.串口配置ToolStripMenuItem.Name = "串口配置ToolStripMenuItem";
-            this.串口配置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.串口配置ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.串口配置ToolStripMenuItem.Text = "串口配置";
             this.串口配置ToolStripMenuItem.Click += new System.EventHandler(this.串口配置ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(132, 6);
             // 
             // iP参数配置ToolStripMenuItem
             // 
             this.iP参数配置ToolStripMenuItem.Name = "iP参数配置ToolStripMenuItem";
-            this.iP参数配置ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iP参数配置ToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.iP参数配置ToolStripMenuItem.Text = "IP参数配置";
             this.iP参数配置ToolStripMenuItem.Click += new System.EventHandler(this.iP参数配置ToolStripMenuItem_Click);
             // 
@@ -367,6 +380,7 @@
             this.安全模式参数ToolStripMenuItem,
             this.toolStripSeparator15,
             this.主动上报ToolStripMenuItem});
+            this.一致性ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.一致性ToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.一致性ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.规约;
             this.一致性ToolStripMenuItem.Name = "一致性ToolStripMenuItem";
@@ -629,6 +643,7 @@
             // 
             // 应用连接ToolStripMenuItem
             // 
+            this.应用连接ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.应用连接ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.应用连接;
             this.应用连接ToolStripMenuItem.Name = "应用连接ToolStripMenuItem";
             this.应用连接ToolStripMenuItem.Size = new System.Drawing.Size(112, 25);
@@ -643,6 +658,7 @@
             // 
             // 远程控制ToolStripMenuItem1
             // 
+            this.远程控制ToolStripMenuItem1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.远程控制ToolStripMenuItem1.Image = global::ht_698._45.Properties.Resources.远程控制;
             this.远程控制ToolStripMenuItem1.Name = "远程控制ToolStripMenuItem1";
             this.远程控制ToolStripMenuItem1.Size = new System.Drawing.Size(84, 25);
@@ -655,9 +671,24 @@
             this.toolStripTextBox4.Name = "toolStripTextBox4";
             this.toolStripTextBox4.Size = new System.Drawing.Size(1, 25);
             // 
+            // 集合类接口toolStripMenuItem10
+            // 
+            this.集合类接口toolStripMenuItem10.Image = global::ht_698._45.Properties.Resources.集合类接口;
+            this.集合类接口toolStripMenuItem10.Name = "集合类接口toolStripMenuItem10";
+            this.集合类接口toolStripMenuItem10.Size = new System.Drawing.Size(96, 25);
+            this.集合类接口toolStripMenuItem10.Text = "集合类接口";
+            this.集合类接口toolStripMenuItem10.Click += new System.EventHandler(this.集合类接口toolStripMenuItem10_Click);
+            // 
+            // toolStripTextBox13
+            // 
+            this.toolStripTextBox13.BackColor = System.Drawing.Color.Gray;
+            this.toolStripTextBox13.Name = "toolStripTextBox13";
+            this.toolStripTextBox13.Size = new System.Drawing.Size(1, 25);
+            // 
             // 安全传输方式ToolStripMenuItem
             // 
             this.安全传输方式ToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.安全传输方式ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.安全传输方式ToolStripMenuItem.Name = "安全传输方式ToolStripMenuItem";
             this.安全传输方式ToolStripMenuItem.Size = new System.Drawing.Size(92, 25);
             this.安全传输方式ToolStripMenuItem.Text = "安全传输方式";
@@ -684,8 +715,36 @@
             this.toolStripTextBox5.Name = "toolStripTextBox5";
             this.toolStripTextBox5.Size = new System.Drawing.Size(1, 25);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 25);
+            this.toolStripMenuItem1.Text = "逻辑地址";
+            this.toolStripMenuItem1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolStripMenuItem1.MouseEnter += new System.EventHandler(this.toolStripMenuItem1_MouseEnter);
+            // 
+            // CmbLogical
+            // 
+            this.CmbLogical.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CmbLogical.Items.AddRange(new object[] {
+            "0-20版",
+            "1-计量芯",
+            "2-管理芯"});
+            this.CmbLogical.Name = "CmbLogical";
+            this.CmbLogical.Size = new System.Drawing.Size(80, 25);
+            this.CmbLogical.Text = "0-20版";
+            // 
+            // toolStripTextBox12
+            // 
+            this.toolStripTextBox12.BackColor = System.Drawing.Color.Gray;
+            this.toolStripTextBox12.Name = "toolStripTextBox12";
+            this.toolStripTextBox12.Size = new System.Drawing.Size(1, 25);
+            // 
             // 批操作ToolStripMenuItem
             // 
+            this.批操作ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.批操作ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.批操作;
             this.批操作ToolStripMenuItem.Name = "批操作ToolStripMenuItem";
             this.批操作ToolStripMenuItem.Size = new System.Drawing.Size(72, 25);
@@ -700,6 +759,7 @@
             // 
             // 内部进厂命令ToolStripMenuItem
             // 
+            this.内部进厂命令ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.内部进厂命令ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.进厂命令;
             this.内部进厂命令ToolStripMenuItem.Name = "内部进厂命令ToolStripMenuItem";
             this.内部进厂命令ToolStripMenuItem.Size = new System.Drawing.Size(108, 25);
@@ -714,6 +774,7 @@
             // 
             // 测试工具ToolStripMenuItem
             // 
+            this.测试工具ToolStripMenuItem.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.测试工具ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.test1;
             this.测试工具ToolStripMenuItem.Name = "测试工具ToolStripMenuItem";
             this.测试工具ToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
@@ -726,20 +787,6 @@
             this.toolStripTextBox8.Name = "toolStripTextBox8";
             this.toolStripTextBox8.Size = new System.Drawing.Size(1, 25);
             // 
-            // 报文解析toolStripMenuItem1
-            // 
-            this.报文解析toolStripMenuItem1.Image = global::ht_698._45.Properties.Resources.解析;
-            this.报文解析toolStripMenuItem1.Name = "报文解析toolStripMenuItem1";
-            this.报文解析toolStripMenuItem1.Size = new System.Drawing.Size(84, 25);
-            this.报文解析toolStripMenuItem1.Text = "报文解析";
-            this.报文解析toolStripMenuItem1.Click += new System.EventHandler(this.报文解析toolStripMenuItem1_Click);
-            // 
-            // toolStripTextBox9
-            // 
-            this.toolStripTextBox9.BackColor = System.Drawing.Color.Gray;
-            this.toolStripTextBox9.Name = "toolStripTextBox9";
-            this.toolStripTextBox9.Size = new System.Drawing.Size(1, 25);
-            // 
             // toolStripTextBox11
             // 
             this.toolStripTextBox11.BackColor = System.Drawing.Color.Gray;
@@ -748,17 +795,27 @@
             // 
             // 关于ToolStripMenuItem
             // 
-            this.关于ToolStripMenuItem.Image = global::ht_698._45.Properties.Resources.关于;
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(60, 25);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.关于ToolStripMenuItem.Text = "关于";
-            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
+            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click_1);
             // 
-            // toolStripTextBox10
+            // toolStripSeparator20
             // 
-            this.toolStripTextBox10.BackColor = System.Drawing.Color.Gray;
-            this.toolStripTextBox10.Name = "toolStripTextBox10";
-            this.toolStripTextBox10.Size = new System.Drawing.Size(1, 25);
+            this.toolStripSeparator20.Name = "toolStripSeparator20";
+            this.toolStripSeparator20.Size = new System.Drawing.Size(149, 6);
+            // 
+            // 报文解析toolStripMenuItem1
+            // 
+            this.报文解析toolStripMenuItem1.Name = "报文解析toolStripMenuItem1";
+            this.报文解析toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.报文解析toolStripMenuItem1.Text = "报文解析";
+            this.报文解析toolStripMenuItem1.Click += new System.EventHandler(this.报文解析toolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator21
+            // 
+            this.toolStripSeparator21.Name = "toolStripSeparator21";
+            this.toolStripSeparator21.Size = new System.Drawing.Size(149, 6);
             // 
             // Form_Main
             // 
@@ -766,7 +823,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ht_698._45.Properties.Resources.主界面背景1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1341, 414);
+            this.ClientSize = new System.Drawing.Size(1498, 414);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.TXB_Rec);
@@ -854,7 +911,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
-        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator18;
@@ -867,11 +923,17 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox6;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox7;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox8;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox9;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox10;
-        private System.Windows.Forms.ToolStripMenuItem 报文解析toolStripMenuItem1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox11;
         private System.Windows.Forms.ToolStripMenuItem 安全传输方式ToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripComboBox CmbLogical;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox12;
+        private System.Windows.Forms.ToolStripMenuItem 集合类接口toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox13;
+        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator20;
+        private System.Windows.Forms.ToolStripMenuItem 报文解析toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator21;
     }
 }

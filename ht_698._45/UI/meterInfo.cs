@@ -874,5 +874,6 @@ namespace ht_698._45.UI
         {
             this.tb_4.Text = (this.tb_4.Text == "False") ? "True" : "False";
         }
+
     }
 }

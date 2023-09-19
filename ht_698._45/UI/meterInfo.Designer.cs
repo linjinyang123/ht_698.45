@@ -122,6 +122,21 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.chb_4_page2 = new System.Windows.Forms.CheckBox();
+            this.chb_3_page2 = new System.Windows.Forms.CheckBox();
+            this.chb_2_page2 = new System.Windows.Forms.CheckBox();
+            this.chb_1_page2 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.chb_5_page2 = new System.Windows.Forms.CheckBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.chb_6_page2 = new System.Windows.Forms.CheckBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.chb_7_page2 = new System.Windows.Forms.CheckBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_子设备列表)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_规约列表)).BeginInit();
@@ -141,6 +156,7 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_上报通道)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -249,7 +265,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(293, 195);
+            this.label4.Location = new System.Drawing.Point(47, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 48);
             this.label4.TabIndex = 34;
@@ -324,14 +340,14 @@
             this.groupBox5.Controls.Add(this.ch_8);
             this.groupBox5.Location = new System.Drawing.Point(305, 22);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 140);
+            this.groupBox5.Size = new System.Drawing.Size(200, 77);
             this.groupBox5.TabIndex = 35;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "基本信息（20款）";
             // 
             // tx_9
             // 
-            this.tx_9.Location = new System.Drawing.Point(97, 78);
+            this.tx_9.Location = new System.Drawing.Point(97, 50);
             this.tx_9.MaxLength = 6;
             this.tx_9.Name = "tx_9";
             this.tx_9.Size = new System.Drawing.Size(85, 21);
@@ -340,7 +356,7 @@
             // ch_9
             // 
             this.ch_9.AutoSize = true;
-            this.ch_9.Location = new System.Drawing.Point(19, 80);
+            this.ch_9.Location = new System.Drawing.Point(11, 52);
             this.ch_9.Name = "ch_9";
             this.ch_9.Size = new System.Drawing.Size(72, 16);
             this.ch_9.TabIndex = 26;
@@ -349,7 +365,7 @@
             // 
             // tx_8
             // 
-            this.tx_8.Location = new System.Drawing.Point(97, 41);
+            this.tx_8.Location = new System.Drawing.Point(97, 25);
             this.tx_8.MaxLength = 6;
             this.tx_8.Name = "tx_8";
             this.tx_8.Size = new System.Drawing.Size(85, 21);
@@ -358,7 +374,7 @@
             // ch_8
             // 
             this.ch_8.AutoSize = true;
-            this.ch_8.Location = new System.Drawing.Point(19, 43);
+            this.ch_8.Location = new System.Drawing.Point(11, 27);
             this.ch_8.Name = "ch_8";
             this.ch_8.Size = new System.Drawing.Size(72, 16);
             this.ch_8.TabIndex = 24;
@@ -434,7 +450,7 @@
             // 
             // btn_Write_Page2
             // 
-            this.btn_Write_Page2.Location = new System.Drawing.Point(447, 279);
+            this.btn_Write_Page2.Location = new System.Drawing.Point(448, 325);
             this.btn_Write_Page2.Name = "btn_Write_Page2";
             this.btn_Write_Page2.Size = new System.Drawing.Size(75, 23);
             this.btn_Write_Page2.TabIndex = 31;
@@ -493,7 +509,7 @@
             // 
             // btn_Exit2
             // 
-            this.btn_Exit2.Location = new System.Drawing.Point(346, 279);
+            this.btn_Exit2.Location = new System.Drawing.Point(347, 325);
             this.btn_Exit2.Name = "btn_Exit2";
             this.btn_Exit2.Size = new System.Drawing.Size(75, 23);
             this.btn_Exit2.TabIndex = 30;
@@ -503,7 +519,7 @@
             // 
             // btn_Read_Page2
             // 
-            this.btn_Read_Page2.Location = new System.Drawing.Point(249, 279);
+            this.btn_Read_Page2.Location = new System.Drawing.Point(250, 325);
             this.btn_Read_Page2.Name = "btn_Read_Page2";
             this.btn_Read_Page2.Size = new System.Drawing.Size(75, 23);
             this.btn_Read_Page2.TabIndex = 29;
@@ -514,7 +530,7 @@
             // chx_All_P2
             // 
             this.chx_All_P2.AutoSize = true;
-            this.chx_All_P2.Location = new System.Drawing.Point(32, 279);
+            this.chx_All_P2.Location = new System.Drawing.Point(32, 325);
             this.chx_All_P2.Name = "chx_All_P2";
             this.chx_All_P2.Size = new System.Drawing.Size(48, 16);
             this.chx_All_P2.TabIndex = 28;
@@ -986,6 +1002,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.groupBox7);
             this.tabPage2.Controls.Add(this.groupBox5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.tx_7);
@@ -1008,6 +1025,7 @@
             this.tabPage2.Controls.Add(this.ch_1);
             this.tabPage2.Controls.Add(this.tx_6);
             this.tabPage2.Controls.Add(this.ch_6);
+            this.tabPage2.Controls.Add(this.groupBox8);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1133,6 +1151,154 @@
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             // 
+            // chb_4_page2
+            // 
+            this.chb_4_page2.AutoSize = true;
+            this.chb_4_page2.Location = new System.Drawing.Point(10, 88);
+            this.chb_4_page2.Name = "chb_4_page2";
+            this.chb_4_page2.Size = new System.Drawing.Size(96, 16);
+            this.chb_4_page2.TabIndex = 64;
+            this.chb_4_page2.Text = "程序备案类型";
+            this.chb_4_page2.UseVisualStyleBackColor = true;
+            // 
+            // chb_3_page2
+            // 
+            this.chb_3_page2.AutoSize = true;
+            this.chb_3_page2.Location = new System.Drawing.Point(10, 60);
+            this.chb_3_page2.Name = "chb_3_page2";
+            this.chb_3_page2.Size = new System.Drawing.Size(72, 16);
+            this.chb_3_page2.TabIndex = 65;
+            this.chb_3_page2.Text = "厂家代码";
+            this.chb_3_page2.UseVisualStyleBackColor = true;
+            // 
+            // chb_2_page2
+            // 
+            this.chb_2_page2.AutoSize = true;
+            this.chb_2_page2.Location = new System.Drawing.Point(10, 31);
+            this.chb_2_page2.Name = "chb_2_page2";
+            this.chb_2_page2.Size = new System.Drawing.Size(72, 16);
+            this.chb_2_page2.TabIndex = 66;
+            this.chb_2_page2.Text = "备案类型";
+            this.chb_2_page2.UseVisualStyleBackColor = true;
+            // 
+            // chb_1_page2
+            // 
+            this.chb_1_page2.AutoSize = true;
+            this.chb_1_page2.Location = new System.Drawing.Point(1, 0);
+            this.chb_1_page2.Name = "chb_1_page2";
+            this.chb_1_page2.Size = new System.Drawing.Size(108, 16);
+            this.chb_1_page2.TabIndex = 93;
+            this.chb_1_page2.Text = "软件备案号列表";
+            this.chb_1_page2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(109, 29);
+            this.textBox1.MaxLength = 6;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(91, 21);
+            this.textBox1.TabIndex = 94;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(109, 58);
+            this.textBox2.MaxLength = 6;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(91, 21);
+            this.textBox2.TabIndex = 95;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(109, 86);
+            this.textBox3.MaxLength = 6;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(91, 21);
+            this.textBox3.TabIndex = 96;
+            // 
+            // chb_5_page2
+            // 
+            this.chb_5_page2.AutoSize = true;
+            this.chb_5_page2.Location = new System.Drawing.Point(10, 115);
+            this.chb_5_page2.Name = "chb_5_page2";
+            this.chb_5_page2.Size = new System.Drawing.Size(72, 16);
+            this.chb_5_page2.TabIndex = 97;
+            this.chb_5_page2.Text = "备案日期";
+            this.chb_5_page2.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(109, 113);
+            this.textBox4.MaxLength = 6;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(91, 21);
+            this.textBox4.TabIndex = 98;
+            // 
+            // chb_6_page2
+            // 
+            this.chb_6_page2.AutoSize = true;
+            this.chb_6_page2.Location = new System.Drawing.Point(10, 142);
+            this.chb_6_page2.Name = "chb_6_page2";
+            this.chb_6_page2.Size = new System.Drawing.Size(96, 16);
+            this.chb_6_page2.TabIndex = 99;
+            this.chb_6_page2.Text = "当日备案序号";
+            this.chb_6_page2.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(109, 140);
+            this.textBox5.MaxLength = 6;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(91, 21);
+            this.textBox5.TabIndex = 100;
+            // 
+            // chb_7_page2
+            // 
+            this.chb_7_page2.AutoSize = true;
+            this.chb_7_page2.Location = new System.Drawing.Point(10, 169);
+            this.chb_7_page2.Name = "chb_7_page2";
+            this.chb_7_page2.Size = new System.Drawing.Size(60, 16);
+            this.chb_7_page2.TabIndex = 101;
+            this.chb_7_page2.Text = "备案号";
+            this.chb_7_page2.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(109, 167);
+            this.textBox6.MaxLength = 6;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(91, 21);
+            this.textBox6.TabIndex = 102;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.textBox6);
+            this.groupBox7.Controls.Add(this.chb_7_page2);
+            this.groupBox7.Controls.Add(this.textBox5);
+            this.groupBox7.Controls.Add(this.chb_6_page2);
+            this.groupBox7.Controls.Add(this.textBox4);
+            this.groupBox7.Controls.Add(this.chb_5_page2);
+            this.groupBox7.Controls.Add(this.textBox3);
+            this.groupBox7.Controls.Add(this.textBox2);
+            this.groupBox7.Controls.Add(this.textBox1);
+            this.groupBox7.Controls.Add(this.chb_1_page2);
+            this.groupBox7.Controls.Add(this.chb_2_page2);
+            this.groupBox7.Controls.Add(this.chb_3_page2);
+            this.groupBox7.Controls.Add(this.chb_4_page2);
+            this.groupBox7.Location = new System.Drawing.Point(305, 107);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(209, 195);
+            this.groupBox7.TabIndex = 100;
+            this.groupBox7.TabStop = false;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Location = new System.Drawing.Point(44, 249);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(91, 70);
+            this.groupBox8.TabIndex = 102;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "注：";
+            // 
             // meterInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -1171,6 +1337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_上报通道)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1271,6 +1439,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.CheckBox chb_7_page2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckBox chb_6_page2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.CheckBox chb_5_page2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox chb_1_page2;
+        private System.Windows.Forms.CheckBox chb_2_page2;
+        private System.Windows.Forms.CheckBox chb_3_page2;
+        private System.Windows.Forms.CheckBox chb_4_page2;
+        private System.Windows.Forms.GroupBox groupBox8;
 
 
     }
