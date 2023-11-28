@@ -1,4 +1,5 @@
 ﻿using EncryptServerConnect;
+using ht_698._45.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,13 +44,14 @@ namespace ht_698._45.UI
                     {
                         CommParam.comPort.OpenPort();
                     }
-                    if (Protocol.GetRequestNormal("40010200", "43", "45AAAAAAAAAAAA", PublicVariable.Client_Add, ref cData, false, ref splitFlag))
+                    if (Protocol.GetRequestNormal("40010200", "43", (PublicVariable.logical_Address == Logical_Address.计量芯 ? "55AAAAAAAAAAAA" : "45AAAAAAAAAAAA"), PublicVariable.Client_Add, ref cData, false, ref splitFlag))
                     {
                         bool flag3 = Protocol.GetResponseNormal(cData, ref str2, ref str3, ref parseData);
                         if (flag3)
                         {
-                            PublicVariable.Address = (((parseData.Length / 2) - 1)).ToString("X2") + parseData;
+                            PublicVariable.Address = (PublicVariable.logical_Address == Logical_Address.计量芯 ? "1" + (((parseData.Length / 2) - 1)) .ToString(): (((parseData.Length / 2) - 1)).ToString("X2")) + parseData;
                             this.txb_Address.Text = parseData;
+                            PublicVariable.address = parseData;
                         }
                         this.label_Info.Text = PublicVariable.Info = "地址" + (flag3 ? "读取成功" : ("读取失败--" + PublicVariable.DARInfo));
                         PublicVariable.Info_Color = flag3 ? "Blue" : "Red";
@@ -1291,7 +1293,8 @@ namespace ht_698._45.UI
         {
             try
             {
-                PublicVariable.Address = "05" + this.txb_Address.Text.PadLeft(12, '0');
+                PublicVariable.Address = (PublicVariable.logical_Address==Logical_Address.计量芯?"15":"05") + this.txb_Address.Text.PadLeft(12, '0');
+                PublicVariable.address = this.txb_Address.Text.PadLeft(12, '0');
             }
             catch (Exception exception)
             {

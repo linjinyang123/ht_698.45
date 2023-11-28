@@ -349,5 +349,19 @@ namespace ht_698._45.UI
             }
         }
 
+        private void tsb_展开_Click(object sender, EventArgs e)
+        {
+            if (this.tsb_展开.Text == "节点展开")
+            {
+                this.lsv_需量.ExpandAll();
+                this.tsb_展开.Text = "节点收起";
+            }
+            else if (this.tsb_展开.Text == "节点收起")
+            {
+                this.lsv_需量.CollapseAll();
+                this.tsb_展开.Text = "节点展开";
+            }
+        }
+
     }
 }

@@ -38,6 +38,7 @@
     <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -73,6 +74,7 @@
     <Compile Include="Base\EncryptServerConnect.cs" />
     <Compile Include="Base\IniFile.cs" />
     <Compile Include="Base\Link_Math.cs" />
+    <Compile Include="Base\Logical_Address.cs" />
     <Compile Include="Base\Protocol.cs" />
     <Compile Include="Base\Protocol_2.cs" />
     <Compile Include="Base\PublicVariable.cs" />
@@ -542,6 +544,7 @@
     <Content Include="Resources\time.png" />
     <None Include="Resources\集合类接口.png" />
     <None Include="Resources\主界面背景.jpg" />
+    <Content Include="Resources\white.jpg" />
     <Content Include="Resources\主界面背景.png" />
     <Content Include="Resources\保存 %281%29.png" />
     <Content Include="Resources\单属性设置.png" />

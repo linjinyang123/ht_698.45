@@ -1,12 +1,8 @@
-﻿
-using DevExpress.XtraPrinting;
+﻿using DevExpress.XtraPrinting;
 using DevExpress.XtraTreeList.Nodes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -133,105 +129,112 @@ namespace ht_698._45.UI
             string str7 = "";
             cData = "";
             parseData.Clear();
-            linkdata = Protocol.MakeLink_Data("05", "01", PublicVariable.PIID_R.ToString("X2"), toolTipText, PublicVariable.TimeTag);
-            switch (PublicVariable.link_Math)
+            try
             {
-                case Link_Math.纯明文操作:
-                    flag = Protocol_2.GetRequestNormal(toolTipText, "43", PublicVariable.Address, PublicVariable.Client_Add, ref cData, ref str3, ref parseData, PublicVariable.TimeTag, ref splitFlag);
-                    break;
-
-                case Link_Math.明文_RN:
-                    flag = Protocol_2.Math_明文_RN("00", "01", ref linkdata, ref str3, ref parseData, ref mAC, ref splitFlag, ref cOutData);
-                    break;
-
-                case Link_Math.明文_SID_MAC:
-                    flag = Protocol_2.Math_明文_SIDMAC("00", "00", ref linkdata, ref str3, ref parseData, ref mAC, ref splitFlag, ref cOutData);
-                    break;
-
-                case Link_Math.密文_SID:
-                    flag = Protocol_2.Math_密文_SID("01", "03", ref linkdata, ref parseData, ref mAC, ref str2, ref str3, ref splitFlag, ref cOutData);
-                    break;
-
-                case Link_Math.密文_SID_MAC:
-                    flag = Protocol_2.Math_密文_SID_MAC("01", "00", ref linkdata, ref parseData, ref mAC, ref str2, ref str3, ref splitFlag, ref cOutData);
-                    break;
-            }
-            PublicVariable.Info = node.FullPath + (flag ? "读取成功" : "读取失败--") + PublicVariable.DARInfo + PublicVariable.MAC_Info;
-            PublicVariable.Info_Color = flag ? "Blue" : "Red";
-            DBConnect.DBOpen();
-            DataTable table = new DataTable();
-            str7 = DBConnect.Result("select class_OAD_Last2byte,class_dot,class_id from interface where class_OAD_Last2byte='" + toolTipText.Substring(4, 4) + "'and class_id='1'", "treeTable").Rows[0][1].ToString();
-            this.lsv_电能量.BeginUnboundLoad();
-            TreeListNode parentNode = null;
-            if (flag)
-            {
-                TreeListNode node3;
-                if (parseData.Count <= 1)
+                linkdata = Protocol.MakeLink_Data("05", "01", PublicVariable.PIID_R.ToString("X2"), toolTipText, PublicVariable.TimeTag);
+                switch (PublicVariable.link_Math)
                 {
-                    string[] strArray = node.Tag.ToString().Split(new char[] { ',' })[0].Split(new char[] { ':' });
-                    string[] strArray3 = str7.Split(new char[] { ',' });
-                    node3 = this.lsv_电能量.AppendNode(new object[] { node.FullPath, toolTipText }, parentNode);
-                    if (str7 == "")
+                    case Link_Math.纯明文操作:
+                        flag = Protocol_2.GetRequestNormal(toolTipText, "43", PublicVariable.Address, PublicVariable.Client_Add, ref cData, ref str3, ref parseData, PublicVariable.TimeTag, ref splitFlag);
+                        break;
+
+                    case Link_Math.明文_RN:
+                        flag = Protocol_2.Math_明文_RN("00", "01", ref linkdata, ref str3, ref parseData, ref mAC, ref splitFlag, ref cOutData);
+                        break;
+
+                    case Link_Math.明文_SID_MAC:
+                        flag = Protocol_2.Math_明文_SIDMAC("00", "00", ref linkdata, ref str3, ref parseData, ref mAC, ref splitFlag, ref cOutData);
+                        break;
+
+                    case Link_Math.密文_SID:
+                        flag = Protocol_2.Math_密文_SID("01", "03", ref linkdata, ref parseData, ref mAC, ref str2, ref str3, ref splitFlag, ref cOutData);
+                        break;
+
+                    case Link_Math.密文_SID_MAC:
+                        flag = Protocol_2.Math_密文_SID_MAC("01", "00", ref linkdata, ref parseData, ref mAC, ref str2, ref str3, ref splitFlag, ref cOutData);
+                        break;
+                }
+                PublicVariable.Info = node.FullPath + (flag ? "读取成功" : "读取失败--") + PublicVariable.DARInfo + PublicVariable.MAC_Info;
+                PublicVariable.Info_Color = flag ? "Blue" : "Red";
+                DBConnect.DBOpen();
+                DataTable table = new DataTable();
+                str7 = DBConnect.Result("select class_OAD_Last2byte,class_dot,class_id from interface where class_OAD_Last2byte='" + toolTipText.Substring(4, 4) + "'and class_id='1'", "treeTable").Rows[0][1].ToString();
+                this.lsv_电能量.BeginUnboundLoad();
+                TreeListNode parentNode = null;
+                if (flag)
+                {
+                    TreeListNode node3;
+                    if (parseData.Count <= 1)
                     {
-                        if (strArray.Length > 1)
+                        string[] strArray = node.Tag.ToString().Split(new char[] { ',' })[0].Split(new char[] { ':' });
+                        string[] strArray3 = str7.Split(new char[] { ',' });
+                        node3 = this.lsv_电能量.AppendNode(new object[] { node.FullPath, toolTipText }, parentNode);
+                        if (str7 == "")
                         {
-                            this.lsv_电能量.AppendNode(new object[] { "", "", parseData[0], strArray[1] }, node3);
+                            if(strArray.Length > 1)
+                            {
+                                this.lsv_电能量.AppendNode(new object[] { "", "", parseData[0], strArray[1] }, node3);
+                            }
+                            else
+                            {
+                                this.lsv_电能量.AppendNode(new object[] { "", "", parseData[0], strArray[0] }, node3);
+                            }
+                        }
+                        else if (strArray.Length > 1)
+                        {
+                            this.lsv_电能量.AppendNode(new object[] { "", "", PublicVariable.GetFloatstrFromBCDStr(parseData.Count<=0  ? "" : parseData[0], Convert.ToInt16(strArray3[0])), strArray[1] }, node3);
                         }
                         else
                         {
-                            this.lsv_电能量.AppendNode(new object[] { "", "", parseData[0], strArray[0] }, node3);
+                            this.lsv_电能量.AppendNode(new object[] { "", "", PublicVariable.GetFloatstrFromBCDStr(parseData.Count<=0 ? "" : parseData[0], Convert.ToInt16(strArray3[0])), strArray[0] }, node3);
                         }
-                    }
-                    else if (strArray.Length > 1)
-                    {
-                        this.lsv_电能量.AppendNode(new object[] { "", "", PublicVariable.GetFloatstrFromBCDStr(parseData[0], Convert.ToInt16(strArray3[0])), strArray[1] }, node3);
                     }
                     else
                     {
-                        this.lsv_电能量.AppendNode(new object[] { "", "", PublicVariable.GetFloatstrFromBCDStr(parseData[0], Convert.ToInt16(strArray3[0])), strArray[0] }, node3);
+                        string[] strArray5 = node.Tag.ToString().Split(new char[] { ',' });
+                        string[] strArray6 = str7.Split(new char[] { ',' });
+                        node3 = this.lsv_电能量.AppendNode(new object[] { node.FullPath, toolTipText }, parentNode);
+                        for (int i = 0; i < parseData.Count; i++)
+                        {
+                            string[] strArray4;
+                            if (parseData.Count > strArray5.Length)
+                            {
+                                strArray4 = strArray5[0].Split(new char[] { ':' });
+                            }
+                            strArray4 = strArray5[i].Split(new char[] { ':' });
+                            if (str7 != "")
+                            {
+                                this.lsv_电能量.AppendNode(new object[] { strArray4[0], "", PublicVariable.GetFloatstrFromBCDStr(parseData[i], Convert.ToInt16(strArray6[i])), strArray4[1] }, node3);
+                            }
+                            else
+                            {
+                                this.lsv_电能量.AppendNode(new object[] { strArray4[0], "", parseData[i], strArray4[1] }, node3);
+                            }
+                        }
                     }
                 }
-                else
+                this.lsv_电能量.ExpandAll();
+                this.lsv_电能量.EndUnboundLoad();
+                DBConnect.DBClose();
+                if ((PublicVariable.follow_OADNormal.Count != 0) || (PublicVariable.follow_OADRercord != ""))
                 {
-                    string[] strArray5 = node.Tag.ToString().Split(new char[] { ',' });
-                    string[] strArray6 = str7.Split(new char[] { ',' });
-                    node3 = this.lsv_电能量.AppendNode(new object[] { node.FullPath, toolTipText }, parentNode);
-                    for (int i = 0; i < parseData.Count; i++)
+                    if ((this.followForm == null) || this.followForm.IsDisposed)
                     {
-                        string[] strArray4;
-                        if (parseData.Count > strArray5.Length)
-                        {
-                            strArray4 = strArray5[0].Split(new char[] { ':' });
-                        }
-                        strArray4 = strArray5[i].Split(new char[] { ':' });
-                        if (str7 != "")
-                        {
-                            this.lsv_电能量.AppendNode(new object[] { strArray4[0], "", PublicVariable.GetFloatstrFromBCDStr(parseData[i], Convert.ToInt16(strArray6[i])), strArray4[1] }, node3);
-                        }
-                        else
-                        {
-                            this.lsv_电能量.AppendNode(new object[] { strArray4[0], "", parseData[i], strArray4[1] }, node3);
-                        }
+                        this.followForm = new FollowRepoartAndTimeTag();
+                        this.followForm.Show(this);
+                    }
+                    else
+                    {
+                        this.followForm.Dispose();
+                        this.followForm = new FollowRepoartAndTimeTag();
+                        this.followForm.Show(this);
                     }
                 }
             }
-            this.lsv_电能量.ExpandAll();
-            this.lsv_电能量.EndUnboundLoad();
-            DBConnect.DBClose();
-            if ((PublicVariable.follow_OADNormal.Count != 0) || (PublicVariable.follow_OADRercord != ""))
+            catch (Exception ex)
             {
-                if ((this.followForm == null) || this.followForm.IsDisposed)
-                {
-                    this.followForm = new FollowRepoartAndTimeTag();
-                    this.followForm.Show(this);
-                }
-                else
-                {
-                    this.followForm.Dispose();
-                    this.followForm = new FollowRepoartAndTimeTag();
-                    this.followForm.Show(this);
-                }
-            }
+                 MessageBox.Show(ex.ToString());
+            } 
         }
 
         private void tlb_Excel_Click(object sender, EventArgs e)
@@ -365,6 +368,20 @@ namespace ht_698._45.UI
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void tsb_展开_Click(object sender, EventArgs e)
+        {
+            if (this.tsb_展开.Text == "节点展开")
+            {
+                this.lsv_电能量.ExpandAll();
+                this.tsb_展开.Text = "节点收起";
+            }
+            else if (this.tsb_展开.Text == "节点收起")
+            {
+                this.lsv_电能量.CollapseAll();
+                this.tsb_展开.Text = "节点展开";
             }
         }
     }

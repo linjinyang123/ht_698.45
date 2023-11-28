@@ -10,6 +10,7 @@ using Sunisoft.IrisSkin;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using ht_698._45.Base;
 
 namespace ht_698._45.UI
 {
@@ -248,7 +249,7 @@ namespace ht_698._45.UI
             PublicVariable.timeOut = this.iniFile.IniReadValue("MAIN", "timeout");
             PublicVariable.LinkRoadFlag = Convert.ToBoolean(this.iniFile.IniReadValue("MAIN", "LinkRoadFlag"));
             AddSkinMenu(this.pfu);
-            this.menuStrip1.BackColor = Color.White;
+            
         }
 
         private void 串口配置ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -620,8 +621,8 @@ namespace ht_698._45.UI
                 IntPtr handle = temp[0].MainWindowHandle;
                 SwitchToThisWindow(handle, true);    // 激活，显示在最前
             }
-            if(!b)
-            ShellExecute(IntPtr.Zero, new StringBuilder("Open"), new StringBuilder("国网报文解析(面向对象).exe"), new StringBuilder(""), new StringBuilder(Application.StartupPath), 1);
+            if (!b)
+                ShellExecute(IntPtr.Zero, new StringBuilder("Open"), new StringBuilder("国网报文解析(面向对象).exe"), new StringBuilder(""), new StringBuilder(Application.StartupPath), 1);
         }
 
         private void 安全传输方式ToolStripMenuItem_MouseEnter(object sender, EventArgs e)
@@ -672,6 +673,25 @@ namespace ht_698._45.UI
                 }
             }
             new Aboat(this).Show();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in base.MdiChildren)
+            {
+                if (form.Name == "CommParam")
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            new CommParam(this).Show();
+        }
+
+        private void CmbLogical_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PublicVariable.logical_Address = (Logical_Address)this.CmbLogical.SelectedIndex;
+            PublicVariable.Address = (PublicVariable.logical_Address == Logical_Address.计量芯 ? "15" : "05") + PublicVariable.address;
         }
     }
 }

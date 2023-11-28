@@ -140,7 +140,6 @@ F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698.45.exe
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698.45.pdb
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\bin\Debug\ht_698.45.exe
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\bin\Debug\ht_698.45.pdb
-F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.csprojResolveAssemblyReference.cache
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.Aboat.resources
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.Properties.Resources.resources
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.Advanced.resources
@@ -183,3 +182,4 @@ F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.载波�
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.csproj.GenerateResource.Cache
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698.45.exe.licenses
 F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.UI.FrmCollection.resources
+F:\离职文件\gitProgram\ht_698.45\ht_698._45\obj\Debug\ht_698._45.csprojResolveAssemblyReference.cache

@@ -3098,5 +3098,29 @@ namespace ht_698._45.UI
             }
         }
 
+        private void chk_24_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.chk_24.Checked)
+            {
+                for (int i = 0; i < this.jiesuanArray.Length; i++)
+                {
+                    if ((this.jiesuanArray[i] != null) && this.jiesuanArray[i].Visible)
+                    {
+                        this.jiesuanArray[i].Checked = true;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < this.jiesuanArray.Length; i++)
+                {
+                    if ((this.jiesuanArray[i] != null) && this.jiesuanArray[i].Visible)
+                    {
+                        this.jiesuanArray[i].Checked = false;
+                    }
+                }
+            }
+        }
+
     }
 }

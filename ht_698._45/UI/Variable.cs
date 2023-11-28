@@ -317,7 +317,7 @@ namespace ht_698._45.UI
                 {
                     return false;
                 }
-                for (int i = 0; i < count; i++)
+                for(int i = 0; i < count; i++)
                 {
                     if ((table.Rows[i][0].ToString() == "") || (table.Rows[i][0].ToString() == " "))
                     {
@@ -369,6 +369,20 @@ namespace ht_698._45.UI
             DBConnect.DBOpen();
             this.Variable_DBtoTreeView();
             DBConnect.DBClose();
+        }
+
+        private void tsb_展开_Click(object sender, EventArgs e)
+        {
+            if (this.tsb_展开.Text == "节点展开")
+            {
+                this.lsv_变量.ExpandAll();
+                this.tsb_展开.Text = "节点收起";
+            }
+            else if (this.tsb_展开.Text == "节点收起")
+            {
+                this.lsv_变量.CollapseAll();
+                this.tsb_展开.Text = "节点展开";
+            }
         }
     }
 }

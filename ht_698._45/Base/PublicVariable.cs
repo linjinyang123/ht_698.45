@@ -2,6 +2,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraPrintingLinks;
 using EncryptServerConnect;
+using ht_698._45.Base;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -49,6 +50,7 @@ namespace ht_698._45
         public static bool RaomaFlag = false;
         public static int sumOfbit = 0x200;
         public static string Address = "05111111111111";
+        public static string address = "111111111111";
         public static string Client_Add = "A1";
         public static bool IsReading = false;
         public static bool TimeTag = false;
@@ -70,6 +72,7 @@ namespace ht_698._45
         public static StringBuilder cOutSessionKey = new StringBuilder(200);
         public static bool ConnetionFlag = false;
         public static Link_Math link_Math;
+        public static Logical_Address logical_Address;
         public static List<string> follow_OADNormal = new List<string>();
         public static List<string> follow_DataNormal = new List<string>();
         public static string follow_OADRercord = "";

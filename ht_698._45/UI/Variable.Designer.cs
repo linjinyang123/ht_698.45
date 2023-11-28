@@ -41,6 +41,8 @@
             this.tlb_Excel = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tlb_Exit = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsb_展开 = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tree_变量 = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.lsv_变量)).BeginInit();
@@ -118,6 +120,7 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tlb_Read,
             this.toolStripSeparator1,
@@ -125,7 +128,9 @@
             this.toolStripSeparator2,
             this.tlb_Excel,
             this.toolStripSeparator3,
-            this.tlb_Exit});
+            this.tlb_Exit,
+            this.toolStripSeparator4,
+            this.tsb_展开});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(685, 34);
@@ -186,6 +191,21 @@
             this.tlb_Exit.Size = new System.Drawing.Size(57, 31);
             this.tlb_Exit.Text = "退出";
             this.tlb_Exit.Click += new System.EventHandler(this.tlb_Exit_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 34);
+            // 
+            // tsb_展开
+            // 
+            this.tsb_展开.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tsb_展开.Image = global::ht_698._45.Properties.Resources.节点;
+            this.tsb_展开.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsb_展开.Name = "tsb_展开";
+            this.tsb_展开.Size = new System.Drawing.Size(85, 31);
+            this.tsb_展开.Text = "节点展开";
+            this.tsb_展开.Click += new System.EventHandler(this.tsb_展开_Click);
             // 
             // splitContainer1
             // 
@@ -253,5 +273,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton tsb_展开;
     }
 }

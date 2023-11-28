@@ -1493,6 +1493,7 @@
             // 
             this.toolStrip1.AutoSize = false;
             this.toolStrip1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbn_单项抄读,
             this.toolStripSeparator1,
@@ -2773,6 +2774,7 @@
             this.chk_24.TabIndex = 93;
             this.chk_24.Text = "结算日";
             this.chk_24.UseVisualStyleBackColor = true;
+            this.chk_24.CheckedChanged += new System.EventHandler(this.chk_24_CheckedChanged);
             // 
             // txt_15
             // 
@@ -3331,7 +3333,6 @@
             // chb4_Page5
             // 
             this.chb4_Page5.AutoSize = true;
-            this.chb4_Page5.Enabled = false;
             this.chb4_Page5.ForeColor = System.Drawing.Color.Blue;
             this.chb4_Page5.Location = new System.Drawing.Point(8, 52);
             this.chb4_Page5.Name = "chb4_Page5";
@@ -3350,7 +3351,6 @@
             // chb3_Page5
             // 
             this.chb3_Page5.AutoSize = true;
-            this.chb3_Page5.Enabled = false;
             this.chb3_Page5.ForeColor = System.Drawing.Color.Blue;
             this.chb3_Page5.Location = new System.Drawing.Point(8, 23);
             this.chb3_Page5.Name = "chb3_Page5";
